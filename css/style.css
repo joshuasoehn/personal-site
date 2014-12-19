@@ -93,6 +93,18 @@ header {
   width: 300px;
   float: left;
 }
+header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 1200px) {
+  header {
+    width: 250px;
+    margin: auto;
+    float: none;
+  }
+}
 
 .dot {
   display: block;
@@ -107,7 +119,7 @@ header {
 }
 @media (max-width: 650px) {
   .dot {
-    margin: auto;
+    margin: 5px auto 0;
   }
 }
 .dot:hover {
@@ -134,7 +146,9 @@ header {
 }
 @media (max-width: 650px) {
   .line {
+    float: right;
     margin: auto;
+    margin-right: 20px;
   }
 }
 .line:hover {
@@ -153,6 +167,11 @@ header {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+@media (max-width: 650px) {
+  .dot.small {
+    margin: 20px auto 0 50px;
+  }
 }
 .dot.small:hover {
   border-radius: 50%;
@@ -175,6 +194,13 @@ header {
 
 .about .text {
   float: right;
+}
+@media (max-width: 1200px) {
+  .about .text {
+    max-width: 100%;
+    margin-top: 80px;
+    float: left;
+  }
 }
 .about img {
   margin-top: 40px;
@@ -232,4 +258,7 @@ footer {
 }
 footer .contact {
   float: left;
+}
+footer .contact a {
+  border: 0;
 }
