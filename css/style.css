@@ -8,6 +8,11 @@ html {
   position: relative;
   border: 30px solid #f0efe8;
 }
+@media (max-width: 650px) {
+  html {
+    border: 10px solid #f0efe8;
+  }
+}
 
 body {
   font-family: "futura-pt", sans-serif;
@@ -18,7 +23,7 @@ body {
 }
 @media (max-width: 700px) {
   body {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -36,12 +41,17 @@ a {
           transition: all .2s ease;
 }
 a:hover {
-  color: blue;
+  color: #03c;
+  border-color: #03c;
 }
 
 a.grey {
   color: #bbb;
   border-color: #bbb;
+}
+a.grey:hover {
+  color: #03c;
+  border-color: #03c;
 }
 
 .link {
@@ -55,6 +65,11 @@ h1 {
   margin-bottom: 20px;
   color: #111;
 }
+@media (max-width: 650px) {
+  h1 {
+    font-size: 30px;
+  }
+}
 
 h4 {
   text-transform: uppercase;
@@ -64,10 +79,21 @@ h4 {
   letter-spacing: 3px;
   margin-bottom: 40px;
 }
+@media (max-width: 650px) {
+  h4 {
+    font-size: 16px;
+  }
+}
 
 header {
   max-width: 1000px;
   margin: 80px auto;
+  padding: 0 5%;
+}
+@media (max-width: 650px) {
+  header {
+    margin: 60px auto 0px;
+  }
 }
 
 .dot {
@@ -77,6 +103,11 @@ header {
   border: 10px solid #111;
   -webkit-transition: all .3s ease;
           transition: all .3s ease;
+}
+@media (max-width: 650px) {
+  .dot {
+    margin: auto;
+  }
 }
 .dot:hover {
   border-radius: 0;
@@ -89,6 +120,7 @@ header {
 .container {
   max-width: 1000px;
   margin: 80px auto;
+  padding: 0 6%;
   position: relative;
 }
 
@@ -112,7 +144,7 @@ header {
 }
 
 .project-title {
-  font-family: "freight-text-pro",sans-serif;
+  font-family: "freight-text-pro", sans-serif;
   font-size: 32px;
   display: inline-block;
   font-weight: 600;
@@ -120,10 +152,10 @@ header {
 }
 
 .awards .link {
-  font-family: "freight-text-pro",sans-serif;
+  font-family: "freight-text-pro", sans-serif;
   font-weight: 600;
   margin-right: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 32px;
   border: 0;
 }
@@ -136,9 +168,15 @@ header {
 }
 .elsewhere .link {
   margin-right: 20px;
+  margin-bottom: 15px;
 }
 
 footer {
+  margin-top: -165px;
   background: #f0efe8;
-  padding: 20px;
+  padding: 20px 0;
+  word-break: break-word;
+}
+footer .container {
+  margin-top: 180px;
 }
