@@ -54,6 +54,10 @@ a.grey:hover {
   border-color: #03c;
 }
 
+img {
+  width: 100%;
+}
+
 .link {
   display: inline-block;
 }
@@ -86,20 +90,17 @@ h4 {
 }
 
 header {
-  max-width: 1000px;
-  margin: 80px auto;
-  padding: 0 5%;
-}
-@media (max-width: 650px) {
-  header {
-    margin: 60px auto 0px;
-  }
+  width: 300px;
+  float: left;
 }
 
 .dot {
-  width: 40px;
-  height: 40px;
+  display: block;
+  width: 45px;
+  height: 45px;
+  float: left;
   border-radius: 40px;
+  margin-top: 40px;
   border: 10px solid #111;
   -webkit-transition: all .3s ease;
           transition: all .3s ease;
@@ -117,6 +118,49 @@ header {
           transform: rotate(45deg);
 }
 
+.line {
+  display: block;
+  width: 10px;
+  height: 80px;
+  float: left;
+  background: #111;
+  margin-top: 100px;
+  float: right;
+  -webkit-transition: all .3s ease;
+          transition: all .3s ease;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+@media (max-width: 650px) {
+  .line {
+    margin: auto;
+  }
+}
+.line:hover {
+  border-color: #000;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.dot.small {
+  width: 20px;
+  height: 20px;
+  margin-top: 180px;
+  margin-left: 40px;
+  border-radius: 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.dot.small:hover {
+  border-radius: 50%;
+  -webkit-transform: rotate(190deg);
+      -ms-transform: rotate(190deg);
+          transform: rotate(190deg);
+}
+
 .container {
   max-width: 1000px;
   margin: 80px auto;
@@ -127,6 +171,13 @@ header {
 .text {
   max-width: 600px;
   overflow: hidden;
+}
+
+.about .text {
+  float: right;
+}
+.about img {
+  margin-top: 40px;
 }
 
 .projects .link {
@@ -162,7 +213,9 @@ header {
 
 .elsewhere {
   border: 2px solid #444;
+  margin-top: -20px;
   max-width: 600px;
+  float: right;
   width: auto;
   padding: 20px;
 }
@@ -172,11 +225,11 @@ header {
 }
 
 footer {
-  margin-top: -165px;
   background: #f0efe8;
   padding: 20px 0;
   word-break: break-word;
+  overflow: hidden;
 }
-footer .container {
-  margin-top: 180px;
+footer .contact {
+  float: left;
 }
