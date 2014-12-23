@@ -6,12 +6,6 @@
 
 html {
   position: relative;
-  border: 20px solid #f0efe8;
-}
-@media (max-width: 650px) {
-  html {
-    border: 10px solid #f0efe8;
-  }
 }
 
 body {
@@ -19,7 +13,7 @@ body {
   font-size: 20px;
   font-weight: 400;
   background: #fff;
-  color: #686868;
+  color: #666;
 }
 @media (max-width: 700px) {
   body {
@@ -90,7 +84,7 @@ h4 {
 }
 
 header {
-  width: 300px;
+  width: 250px;
   float: left;
 }
 header:after {
@@ -134,7 +128,6 @@ header:after {
   display: block;
   width: 10px;
   height: 80px;
-  float: left;
   background: #111;
   margin-top: 100px;
   float: right;
@@ -182,7 +175,7 @@ header:after {
 
 .container {
   max-width: 1000px;
-  margin: 80px auto;
+  margin: 100px auto 40px;
   padding: 0 6%;
   position: relative;
 }
@@ -208,7 +201,7 @@ header:after {
   }
 }
 .about img {
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 .projects .link {
