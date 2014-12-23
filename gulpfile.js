@@ -21,7 +21,7 @@ gulp.task('browser-sync', function() {
 
 gulp.task('sass', function() {
   return gulp.src('scss/style.scss')
-    .pipe(sass({ style: 'expanded',  "sourcemap=none": true  }))
+    .pipe(sass({style: 'expanded'}))
     .on('error', notify.onError())
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 9'))
     .pipe(gulp.dest('css'))
