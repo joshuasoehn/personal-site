@@ -157,7 +157,7 @@ header {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 980px;
     margin: 100px auto 40px;
     padding: 0 6%;
     position: relative;
@@ -228,6 +228,7 @@ header {
     .link {
         margin-right: 20px;
         margin-bottom: 15px;
+        border: 0;
     }
 }
 
