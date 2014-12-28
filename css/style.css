@@ -22,8 +22,12 @@ body {
 }
 
 p {
-  line-height: 1.6;
+  line-height: 1.5;
   margin-bottom: 20px;
+}
+
+span {
+  line-height: 1.5;
 }
 
 a {
@@ -114,6 +118,7 @@ header:after {
 @media (max-width: 650px) {
   .dot {
     margin: 5px auto 0;
+    border: 8px solid #111;
   }
 }
 .dot:hover {
@@ -141,7 +146,8 @@ header:after {
   .line {
     float: right;
     margin: auto;
-    margin-right: 20px;
+    margin-right: 40px;
+    width: 8px;
   }
 }
 .line:hover {
@@ -163,7 +169,7 @@ header:after {
 }
 @media (max-width: 650px) {
   .dot.small {
-    margin: 20px auto 0 50px;
+    margin: 20px auto 0 45px;
   }
 }
 .dot.small:hover {
@@ -184,6 +190,11 @@ header:after {
   display: table;
   clear: both;
 }
+@media (max-width: 700px) {
+  .container {
+    margin: 60px auto 40px;
+  }
+}
 
 .text {
   max-width: 600px;
@@ -202,6 +213,11 @@ header:after {
 }
 .about img {
   margin-top: 80px;
+}
+@media (max-width: 700px) {
+  .about img {
+    margin-top: 40px;
+  }
 }
 
 .projects .link {
@@ -235,20 +251,6 @@ header:after {
   border: 0;
 }
 
-.elsewhere {
-  border: 2px solid #444;
-  margin-top: -20px;
-  max-width: 600px;
-  float: right;
-  width: auto;
-  padding: 20px;
-}
-.elsewhere .link {
-  margin-right: 20px;
-  margin-bottom: 15px;
-  border: 0;
-}
-
 footer {
   background: #f0efe8;
   padding: 20px 0;
@@ -257,7 +259,40 @@ footer {
 }
 footer .contact {
   float: left;
+  display: block;
+}
+@media (max-width: 1000px) {
+  footer .contact {
+    width: 100%;
+    float: none;
+  }
+}
+@media (max-width: 650px) {
+  footer .contact h1 {
+    font-size: 28px;
+  }
 }
 footer .contact a {
+  border: 0;
+}
+
+.elsewhere {
+  border: 2px solid #444;
+  margin-top: -20px;
+  max-width: 600px;
+  float: right;
+  width: auto;
+  padding: 20px 20px 5px;
+}
+@media (max-width: 1000px) {
+  .elsewhere {
+    margin-top: 60px;
+    max-width: 100%;
+    float: none;
+  }
+}
+.elsewhere .link {
+  margin-right: 20px;
+  margin-bottom: 15px;
   border: 0;
 }

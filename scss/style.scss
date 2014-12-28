@@ -34,8 +34,12 @@ body {
 }
 
 p {
-    line-height: 1.6;
+    line-height: 1.5;
     margin-bottom: 20px;
+}
+
+span {
+    line-height: 1.5;
 }
 
 a {
@@ -112,6 +116,7 @@ header {
     transition: all .3s ease;
     @media (max-width: 650px) {
         margin: 5px auto 0;
+        border: 8px solid #111;
     } 
     &:hover {
         border-radius: 0;
@@ -132,7 +137,8 @@ header {
     @media (max-width: 650px) {
         float: right;
         margin: auto;
-        margin-right: 20px;
+        margin-right: 40px;
+        width: 8px;
     } 
     &:hover {
         border-color: #000;
@@ -148,7 +154,7 @@ header {
     border-radius: 0;
     transform: rotate(45deg);
     @media (max-width: 650px) {
-        margin: 20px auto 0 50px;
+        margin: 20px auto 0 45px;
     } 
     &:hover {
         border-radius: 50%;
@@ -162,6 +168,9 @@ header {
     padding: 0 6%;
     position: relative;
     @include clearfix;
+    @media (max-width: 700px) {
+        margin: 60px auto 40px;
+    }
 }
 
 .text {
@@ -180,6 +189,9 @@ header {
     }
     img {
         margin-top: 80px;
+        @media (max-width: 700px) {
+            margin-top: 40px;
+        }
     }
 }
 
@@ -218,31 +230,44 @@ header {
     }
 }
 
+footer {
+    background: #f0efe8;
+    padding: 20px 0;
+    word-break: break-word;
+    overflow: hidden;
+    .contact {
+        float: left;
+        display: block;
+        @media (max-width: 1000px) {
+            width: 100%;
+            float: none;
+            }
+        @media (max-width: 650px) {
+            h1 {
+                font-size: 28px;
+            }
+            }
+        a {
+            border: 0;
+        }
+    }
+}
+
 .elsewhere {
     border: 2px solid #444;
     margin-top: -20px;
     max-width: 600px;
     float: right;
     width: auto;
-    padding: 20px;
+    padding: 20px 20px 5px;
+    @media (max-width: 1000px) {
+        margin-top: 60px;
+        max-width: 100%;
+        float: none;
+    }
     .link {
         margin-right: 20px;
         margin-bottom: 15px;
         border: 0;
-    }
-}
-
-footer {
-    background: #f0efe8;
-    padding: 20px 0;
-    word-break: break-word;
-    overflow: hidden;
-    .container {
-    }
-    .contact {
-        float: left;
-        a {
-            border: 0;
-        }
     }
 }
