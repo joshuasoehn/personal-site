@@ -1,0 +1,752 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'gulp-ruby-sass',
+1 verbose cli   'gulp-autoprefixer',
+1 verbose cli   'gulp-rename',
+1 verbose cli   'gulp-watch',
+1 verbose cli   'gulp-uglifyjs',
+1 verbose cli   'gulp-concatg',
+1 verbose cli   'browser-sync',
+1 verbose cli   'gulp-notify' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 warn package.json sass@0.5.0 No repository field.
+5 verbose cache add [ 'gulp-ruby-sass', null ]
+6 verbose cache add name=undefined spec="gulp-ruby-sass" args=["gulp-ruby-sass",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'gulp-ruby-sass',
+7 verbose parsed url   path: 'gulp-ruby-sass',
+7 verbose parsed url   href: 'gulp-ruby-sass' }
+8 verbose cache add [ 'gulp-autoprefixer', null ]
+9 verbose cache add name=undefined spec="gulp-autoprefixer" args=["gulp-autoprefixer",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'gulp-autoprefixer',
+10 verbose parsed url   path: 'gulp-autoprefixer',
+10 verbose parsed url   href: 'gulp-autoprefixer' }
+11 verbose cache add [ 'gulp-rename', null ]
+12 verbose cache add name=undefined spec="gulp-rename" args=["gulp-rename",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'gulp-rename',
+13 verbose parsed url   path: 'gulp-rename',
+13 verbose parsed url   href: 'gulp-rename' }
+14 verbose cache add [ 'gulp-watch', null ]
+15 verbose cache add name=undefined spec="gulp-watch" args=["gulp-watch",null]
+16 verbose parsed url { protocol: null,
+16 verbose parsed url   slashes: null,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: null,
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: null,
+16 verbose parsed url   hash: null,
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: 'gulp-watch',
+16 verbose parsed url   path: 'gulp-watch',
+16 verbose parsed url   href: 'gulp-watch' }
+17 verbose cache add [ 'gulp-uglifyjs', null ]
+18 verbose cache add name=undefined spec="gulp-uglifyjs" args=["gulp-uglifyjs",null]
+19 verbose parsed url { protocol: null,
+19 verbose parsed url   slashes: null,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: null,
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: null,
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: 'gulp-uglifyjs',
+19 verbose parsed url   path: 'gulp-uglifyjs',
+19 verbose parsed url   href: 'gulp-uglifyjs' }
+20 verbose cache add [ 'gulp-concatg', null ]
+21 verbose cache add name=undefined spec="gulp-concatg" args=["gulp-concatg",null]
+22 verbose parsed url { protocol: null,
+22 verbose parsed url   slashes: null,
+22 verbose parsed url   auth: null,
+22 verbose parsed url   host: null,
+22 verbose parsed url   port: null,
+22 verbose parsed url   hostname: null,
+22 verbose parsed url   hash: null,
+22 verbose parsed url   search: null,
+22 verbose parsed url   query: null,
+22 verbose parsed url   pathname: 'gulp-concatg',
+22 verbose parsed url   path: 'gulp-concatg',
+22 verbose parsed url   href: 'gulp-concatg' }
+23 verbose cache add [ 'browser-sync', null ]
+24 verbose cache add name=undefined spec="browser-sync" args=["browser-sync",null]
+25 verbose parsed url { protocol: null,
+25 verbose parsed url   slashes: null,
+25 verbose parsed url   auth: null,
+25 verbose parsed url   host: null,
+25 verbose parsed url   port: null,
+25 verbose parsed url   hostname: null,
+25 verbose parsed url   hash: null,
+25 verbose parsed url   search: null,
+25 verbose parsed url   query: null,
+25 verbose parsed url   pathname: 'browser-sync',
+25 verbose parsed url   path: 'browser-sync',
+25 verbose parsed url   href: 'browser-sync' }
+26 verbose cache add [ 'gulp-notify', null ]
+27 verbose cache add name=undefined spec="gulp-notify" args=["gulp-notify",null]
+28 verbose parsed url { protocol: null,
+28 verbose parsed url   slashes: null,
+28 verbose parsed url   auth: null,
+28 verbose parsed url   host: null,
+28 verbose parsed url   port: null,
+28 verbose parsed url   hostname: null,
+28 verbose parsed url   hash: null,
+28 verbose parsed url   search: null,
+28 verbose parsed url   query: null,
+28 verbose parsed url   pathname: 'gulp-notify',
+28 verbose parsed url   path: 'gulp-notify',
+28 verbose parsed url   href: 'gulp-notify' }
+29 silly lockFile a832ec05-gulp-ruby-sass gulp-ruby-sass
+30 verbose lock gulp-ruby-sass /Users/joshua.soehn/.npm/a832ec05-gulp-ruby-sass.lock
+31 silly lockFile 1367cca4-gulp-autoprefixer gulp-autoprefixer
+32 verbose lock gulp-autoprefixer /Users/joshua.soehn/.npm/1367cca4-gulp-autoprefixer.lock
+33 silly lockFile 8ff38cb7-gulp-rename gulp-rename
+34 verbose lock gulp-rename /Users/joshua.soehn/.npm/8ff38cb7-gulp-rename.lock
+35 silly lockFile 4220564f-gulp-watch gulp-watch
+36 verbose lock gulp-watch /Users/joshua.soehn/.npm/4220564f-gulp-watch.lock
+37 silly lockFile 80bb0ed7-gulp-uglifyjs gulp-uglifyjs
+38 verbose lock gulp-uglifyjs /Users/joshua.soehn/.npm/80bb0ed7-gulp-uglifyjs.lock
+39 silly lockFile b28a5393-gulp-concatg gulp-concatg
+40 verbose lock gulp-concatg /Users/joshua.soehn/.npm/b28a5393-gulp-concatg.lock
+41 silly lockFile 6d7be3df-browser-sync browser-sync
+42 verbose lock browser-sync /Users/joshua.soehn/.npm/6d7be3df-browser-sync.lock
+43 silly lockFile 6a726d29-gulp-notify gulp-notify
+44 verbose lock gulp-notify /Users/joshua.soehn/.npm/6a726d29-gulp-notify.lock
+45 silly lockFile a832ec05-gulp-ruby-sass gulp-ruby-sass
+46 silly lockFile a832ec05-gulp-ruby-sass gulp-ruby-sass
+47 silly lockFile 1367cca4-gulp-autoprefixer gulp-autoprefixer
+48 silly lockFile 1367cca4-gulp-autoprefixer gulp-autoprefixer
+49 silly lockFile 8ff38cb7-gulp-rename gulp-rename
+50 silly lockFile 8ff38cb7-gulp-rename gulp-rename
+51 silly lockFile 4220564f-gulp-watch gulp-watch
+52 silly lockFile 4220564f-gulp-watch gulp-watch
+53 silly lockFile 80bb0ed7-gulp-uglifyjs gulp-uglifyjs
+54 silly lockFile 80bb0ed7-gulp-uglifyjs gulp-uglifyjs
+55 silly lockFile b28a5393-gulp-concatg gulp-concatg
+56 silly lockFile b28a5393-gulp-concatg gulp-concatg
+57 silly lockFile 6d7be3df-browser-sync browser-sync
+58 silly lockFile 6d7be3df-browser-sync browser-sync
+59 silly lockFile 6a726d29-gulp-notify gulp-notify
+60 silly lockFile 6a726d29-gulp-notify gulp-notify
+61 verbose addNamed [ 'gulp-ruby-sass', '' ]
+62 verbose addNamed [ null, '*' ]
+63 silly lockFile c308c9d4-gulp-ruby-sass gulp-ruby-sass@
+64 verbose lock gulp-ruby-sass@ /Users/joshua.soehn/.npm/c308c9d4-gulp-ruby-sass.lock
+65 verbose addNamed [ 'gulp-autoprefixer', '' ]
+66 verbose addNamed [ null, '*' ]
+67 silly lockFile e459a000-gulp-autoprefixer gulp-autoprefixer@
+68 verbose lock gulp-autoprefixer@ /Users/joshua.soehn/.npm/e459a000-gulp-autoprefixer.lock
+69 verbose addNamed [ 'gulp-rename', '' ]
+70 verbose addNamed [ null, '*' ]
+71 silly lockFile 81aa0665-gulp-rename gulp-rename@
+72 verbose lock gulp-rename@ /Users/joshua.soehn/.npm/81aa0665-gulp-rename.lock
+73 verbose addNamed [ 'gulp-watch', '' ]
+74 verbose addNamed [ null, '*' ]
+75 silly lockFile aa056385-gulp-watch gulp-watch@
+76 verbose lock gulp-watch@ /Users/joshua.soehn/.npm/aa056385-gulp-watch.lock
+77 verbose addNamed [ 'gulp-uglifyjs', '' ]
+78 verbose addNamed [ null, '*' ]
+79 silly lockFile 55dab76a-gulp-uglifyjs gulp-uglifyjs@
+80 verbose lock gulp-uglifyjs@ /Users/joshua.soehn/.npm/55dab76a-gulp-uglifyjs.lock
+81 verbose addNamed [ 'gulp-concatg', '' ]
+82 verbose addNamed [ null, '*' ]
+83 silly lockFile abbacc2d-gulp-concatg gulp-concatg@
+84 verbose lock gulp-concatg@ /Users/joshua.soehn/.npm/abbacc2d-gulp-concatg.lock
+85 verbose addNamed [ 'browser-sync', '' ]
+86 verbose addNamed [ null, '*' ]
+87 silly lockFile 6373e9ab-browser-sync browser-sync@
+88 verbose lock browser-sync@ /Users/joshua.soehn/.npm/6373e9ab-browser-sync.lock
+89 verbose addNamed [ 'gulp-notify', '' ]
+90 verbose addNamed [ null, '*' ]
+91 silly lockFile 6b689132-gulp-notify gulp-notify@
+92 verbose lock gulp-notify@ /Users/joshua.soehn/.npm/6b689132-gulp-notify.lock
+93 silly addNameRange { name: 'gulp-ruby-sass', range: '*', hasData: false }
+94 silly addNameRange { name: 'gulp-autoprefixer', range: '*', hasData: false }
+95 silly addNameRange { name: 'gulp-rename', range: '*', hasData: false }
+96 silly addNameRange { name: 'gulp-watch', range: '*', hasData: false }
+97 silly addNameRange { name: 'gulp-uglifyjs', range: '*', hasData: false }
+98 silly addNameRange { name: 'gulp-concatg', range: '*', hasData: false }
+99 silly addNameRange { name: 'browser-sync', range: '*', hasData: false }
+100 silly addNameRange { name: 'gulp-notify', range: '*', hasData: false }
+101 verbose request where is /gulp-concatg
+102 verbose request registry https://registry.npmjs.org/
+103 verbose request id 7d4576c1daae71dd
+104 verbose url raw /gulp-concatg
+105 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-concatg' ]
+106 verbose url resolved https://registry.npmjs.org/gulp-concatg
+107 verbose request where is https://registry.npmjs.org/gulp-concatg
+108 info trying registry request attempt 1 at 11:51:40
+109 http GET https://registry.npmjs.org/gulp-concatg
+110 verbose request where is /gulp-ruby-sass
+111 verbose request registry https://registry.npmjs.org/
+112 verbose url raw /gulp-ruby-sass
+113 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-ruby-sass' ]
+114 verbose url resolved https://registry.npmjs.org/gulp-ruby-sass
+115 verbose request where is https://registry.npmjs.org/gulp-ruby-sass
+116 info trying registry request attempt 1 at 11:51:40
+117 verbose etag "BN3L9OZWH2E0NAW766F4LQJAH"
+118 http GET https://registry.npmjs.org/gulp-ruby-sass
+119 verbose request where is /gulp-autoprefixer
+120 verbose request registry https://registry.npmjs.org/
+121 verbose url raw /gulp-autoprefixer
+122 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-autoprefixer' ]
+123 verbose url resolved https://registry.npmjs.org/gulp-autoprefixer
+124 verbose request where is https://registry.npmjs.org/gulp-autoprefixer
+125 info trying registry request attempt 1 at 11:51:40
+126 verbose etag "F1SPQIPHSJYNUV7FK1DAPFCVZ"
+127 http GET https://registry.npmjs.org/gulp-autoprefixer
+128 verbose request where is /gulp-rename
+129 verbose request registry https://registry.npmjs.org/
+130 verbose url raw /gulp-rename
+131 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-rename' ]
+132 verbose url resolved https://registry.npmjs.org/gulp-rename
+133 verbose request where is https://registry.npmjs.org/gulp-rename
+134 info trying registry request attempt 1 at 11:51:40
+135 verbose etag "DEIPS472T4QXU9DUGFWVGA3T5"
+136 http GET https://registry.npmjs.org/gulp-rename
+137 verbose request where is /gulp-watch
+138 verbose request registry https://registry.npmjs.org/
+139 verbose url raw /gulp-watch
+140 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-watch' ]
+141 verbose url resolved https://registry.npmjs.org/gulp-watch
+142 verbose request where is https://registry.npmjs.org/gulp-watch
+143 info trying registry request attempt 1 at 11:51:40
+144 verbose etag "2GW8JZYK3G4YRLWVXREAB5MS0"
+145 http GET https://registry.npmjs.org/gulp-watch
+146 verbose request where is /browser-sync
+147 verbose request registry https://registry.npmjs.org/
+148 verbose url raw /browser-sync
+149 verbose url resolving [ 'https://registry.npmjs.org/', './browser-sync' ]
+150 verbose url resolved https://registry.npmjs.org/browser-sync
+151 verbose request where is https://registry.npmjs.org/browser-sync
+152 info trying registry request attempt 1 at 11:51:41
+153 verbose etag "905X6W7H7M85LENYTNUWTOM1S"
+154 http GET https://registry.npmjs.org/browser-sync
+155 verbose request where is /gulp-notify
+156 verbose request registry https://registry.npmjs.org/
+157 verbose url raw /gulp-notify
+158 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-notify' ]
+159 verbose url resolved https://registry.npmjs.org/gulp-notify
+160 verbose request where is https://registry.npmjs.org/gulp-notify
+161 info trying registry request attempt 1 at 11:51:41
+162 verbose etag "4ZDSX4VNSGMTGGG85DETX0I11"
+163 http GET https://registry.npmjs.org/gulp-notify
+164 verbose request where is /gulp-uglifyjs
+165 verbose request registry https://registry.npmjs.org/
+166 verbose url raw /gulp-uglifyjs
+167 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-uglifyjs' ]
+168 verbose url resolved https://registry.npmjs.org/gulp-uglifyjs
+169 verbose request where is https://registry.npmjs.org/gulp-uglifyjs
+170 info trying registry request attempt 1 at 11:51:41
+171 verbose etag "6CSQXF5WKSWS405RRFHL0NB11"
+172 http GET https://registry.npmjs.org/gulp-uglifyjs
+173 http 304 https://registry.npmjs.org/gulp-rename
+174 silly registry.get cb [ 304,
+174 silly registry.get   { date: 'Fri, 19 Dec 2014 10:48:49 GMT',
+174 silly registry.get     server: 'Apache',
+174 silly registry.get     via: '1.1 varnish',
+174 silly registry.get     'last-modified': 'Fri, 19 Dec 2014 10:48:49 GMT',
+174 silly registry.get     'cache-control': 'max-age=60',
+174 silly registry.get     etag: '"DEIPS472T4QXU9DUGFWVGA3T5"',
+174 silly registry.get     age: '32',
+174 silly registry.get     'x-served-by': 'cache-ams4122-AMS',
+174 silly registry.get     'x-cache': 'HIT',
+174 silly registry.get     'x-cache-hits': '1',
+174 silly registry.get     'x-timer': 'S1418986129.997200,VS0,VE0',
+174 silly registry.get     vary: 'Accept',
+174 silly registry.get     'content-length': '0',
+174 silly registry.get     'keep-alive': 'timeout=10, max=50',
+174 silly registry.get     connection: 'Keep-Alive' } ]
+175 verbose etag https://registry.npmjs.org/gulp-rename from cache
+176 silly addNameRange number 2 { name: 'gulp-rename', range: '*', hasData: true }
+177 silly addNameRange versions [ 'gulp-rename',
+177 silly addNameRange   [ '0.1.0', '0.2.1', '0.2.2', '1.0.0', '1.1.0', '1.2.0' ] ]
+178 verbose addNamed [ 'gulp-rename', '1.2.0' ]
+179 verbose addNamed [ '1.2.0', '1.2.0' ]
+180 silly lockFile 5981c611-gulp-rename-1-2-0 gulp-rename@1.2.0
+181 verbose lock gulp-rename@1.2.0 /Users/joshua.soehn/.npm/5981c611-gulp-rename-1-2-0.lock
+182 silly lockFile 5981c611-gulp-rename-1-2-0 gulp-rename@1.2.0
+183 silly lockFile 5981c611-gulp-rename-1-2-0 gulp-rename@1.2.0
+184 silly lockFile 81aa0665-gulp-rename gulp-rename@
+185 silly lockFile 81aa0665-gulp-rename gulp-rename@
+186 http 304 https://registry.npmjs.org/browser-sync
+187 silly registry.get cb [ 304,
+187 silly registry.get   { date: 'Fri, 19 Dec 2014 10:48:50 GMT',
+187 silly registry.get     server: 'Apache',
+187 silly registry.get     via: '1.1 varnish',
+187 silly registry.get     'last-modified': 'Fri, 19 Dec 2014 10:48:50 GMT',
+187 silly registry.get     'cache-control': 'max-age=60',
+187 silly registry.get     etag: '"905X6W7H7M85LENYTNUWTOM1S"',
+187 silly registry.get     age: '46',
+187 silly registry.get     'x-served-by': 'cache-ams4122-AMS',
+187 silly registry.get     'x-cache': 'HIT',
+187 silly registry.get     'x-cache-hits': '1',
+187 silly registry.get     'x-timer': 'S1418986130.014654,VS0,VE0',
+187 silly registry.get     vary: 'Accept',
+187 silly registry.get     'content-length': '0',
+187 silly registry.get     'keep-alive': 'timeout=10, max=49',
+187 silly registry.get     connection: 'Keep-Alive' } ]
+188 verbose etag https://registry.npmjs.org/browser-sync from cache
+189 silly addNameRange number 2 { name: 'browser-sync', range: '*', hasData: true }
+190 silly addNameRange versions [ 'browser-sync',
+190 silly addNameRange   [ '0.1.0',
+190 silly addNameRange     '0.1.1',
+190 silly addNameRange     '0.1.3',
+190 silly addNameRange     '0.1.5',
+190 silly addNameRange     '0.1.6',
+190 silly addNameRange     '0.1.7',
+190 silly addNameRange     '0.1.8',
+190 silly addNameRange     '0.1.9',
+190 silly addNameRange     '0.1.10',
+190 silly addNameRange     '0.2.0',
+190 silly addNameRange     '0.2.1',
+190 silly addNameRange     '0.3.0',
+190 silly addNameRange     '0.3.1',
+190 silly addNameRange     '0.3.2',
+190 silly addNameRange     '0.3.3',
+190 silly addNameRange     '0.3.4',
+190 silly addNameRange     '0.3.5',
+190 silly addNameRange     '0.3.6',
+190 silly addNameRange     '0.3.7',
+190 silly addNameRange     '0.3.8',
+190 silly addNameRange     '0.3.10',
+190 silly addNameRange     '0.4.0',
+190 silly addNameRange     '0.4.1',
+190 silly addNameRange     '0.4.2',
+190 silly addNameRange     '0.4.21',
+190 silly addNameRange     '0.4.3',
+190 silly addNameRange     '0.4.4',
+190 silly addNameRange     '0.4.5',
+190 silly addNameRange     '0.4.6',
+190 silly addNameRange     '0.4.7',
+190 silly addNameRange     '0.4.8',
+190 silly addNameRange     '0.4.9',
+190 silly addNameRange     '0.4.10',
+190 silly addNameRange     '0.4.11',
+190 silly addNameRange     '0.4.12',
+190 silly addNameRange     '0.5.0',
+190 silly addNameRange     '0.5.1',
+190 silly addNameRange     '0.5.2',
+190 silly addNameRange     '0.5.3',
+190 silly addNameRange     '0.5.4',
+190 silly addNameRange     '0.5.5',
+190 silly addNameRange     '0.5.6',
+190 silly addNameRange     '0.5.7',
+190 silly addNameRange     '0.5.8',
+190 silly addNameRange     '0.5.9',
+190 silly addNameRange     '0.6.0',
+190 silly addNameRange     '0.6.1',
+190 silly addNameRange     '0.6.2',
+190 silly addNameRange     '0.7.0',
+190 silly addNameRange     '0.7.1',
+190 silly addNameRange     '0.7.2',
+190 silly addNameRange     '0.7.3',
+190 silly addNameRange     '0.7.4',
+190 silly addNameRange     '0.7.5',
+190 silly addNameRange     '0.7.7',
+190 silly addNameRange     '0.8.0',
+190 silly addNameRange     '0.8.1',
+190 silly addNameRange     '0.8.2',
+190 silly addNameRange     '0.9.0',
+190 silly addNameRange     '0.9.1',
+190 silly addNameRange     '1.0.0',
+190 silly addNameRange     '1.1.0',
+190 silly addNameRange     '1.1.1',
+190 silly addNameRange     '1.1.2',
+190 silly addNameRange     '1.2.0',
+190 silly addNameRange     '1.2.1',
+190 silly addNameRange     '1.3.0',
+190 silly addNameRange     '1.3.2',
+190 silly addNameRange     '1.3.3',
+190 silly addNameRange     '1.3.4',
+190 silly addNameRange     '1.3.5',
+190 silly addNameRange     '1.3.6',
+190 silly addNameRange     '1.3.7',
+190 silly addNameRange     '1.5.0',
+190 silly addNameRange     '1.5.1',
+190 silly addNameRange     '1.5.2',
+190 silly addNameRange     '1.5.3',
+190 silly addNameRange     '1.5.4',
+190 silly addNameRange     '1.5.5',
+190 silly addNameRange     '1.5.6',
+190 silly addNameRange     '1.5.7',
+190 silly addNameRange     '1.5.8',
+190 silly addNameRange     '1.5.9',
+190 silly addNameRange     '1.6.0',
+190 silly addNameRange     '1.6.1',
+190 silly addNameRange     '1.6.2',
+190 silly addNameRange     '1.6.3',
+190 silly addNameRange     '1.6.4',
+190 silly addNameRange     '1.6.5',
+190 silly addNameRange     '1.7.0',
+190 silly addNameRange     '1.7.1',
+190 silly addNameRange     '1.7.2',
+190 silly addNameRange     '1.7.3',
+190 silly addNameRange     '1.8.0' ] ]
+191 verbose addNamed [ 'browser-sync', '1.8.0' ]
+192 verbose addNamed [ '1.8.0', '1.8.0' ]
+193 silly lockFile d42f7de8-browser-sync-1-8-0 browser-sync@1.8.0
+194 verbose lock browser-sync@1.8.0 /Users/joshua.soehn/.npm/d42f7de8-browser-sync-1-8-0.lock
+195 silly lockFile d42f7de8-browser-sync-1-8-0 browser-sync@1.8.0
+196 silly lockFile d42f7de8-browser-sync-1-8-0 browser-sync@1.8.0
+197 silly lockFile 6373e9ab-browser-sync browser-sync@
+198 silly lockFile 6373e9ab-browser-sync browser-sync@
+199 http 404 https://registry.npmjs.org/gulp-concatg
+200 verbose headers { date: 'Fri, 19 Dec 2014 10:48:50 GMT',
+200 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+200 verbose headers   'content-type': 'application/json',
+200 verbose headers   'cache-control': 'max-age=0',
+200 verbose headers   'content-length': '52',
+200 verbose headers   'accept-ranges': 'bytes',
+200 verbose headers   via: '1.1 varnish',
+200 verbose headers   age: '0',
+200 verbose headers   'x-served-by': 'cache-ams4139-AMS',
+200 verbose headers   'x-cache': 'MISS',
+200 verbose headers   'x-cache-hits': '0',
+200 verbose headers   'x-timer': 'S1418986130.006990,VS0,VE190',
+200 verbose headers   'keep-alive': 'timeout=10, max=50',
+200 verbose headers   connection: 'Keep-Alive' }
+201 silly registry.get cb [ 404,
+201 silly registry.get   { date: 'Fri, 19 Dec 2014 10:48:50 GMT',
+201 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+201 silly registry.get     'content-type': 'application/json',
+201 silly registry.get     'cache-control': 'max-age=0',
+201 silly registry.get     'content-length': '52',
+201 silly registry.get     'accept-ranges': 'bytes',
+201 silly registry.get     via: '1.1 varnish',
+201 silly registry.get     age: '0',
+201 silly registry.get     'x-served-by': 'cache-ams4139-AMS',
+201 silly registry.get     'x-cache': 'MISS',
+201 silly registry.get     'x-cache-hits': '0',
+201 silly registry.get     'x-timer': 'S1418986130.006990,VS0,VE190',
+201 silly registry.get     'keep-alive': 'timeout=10, max=50',
+201 silly registry.get     connection: 'Keep-Alive' } ]
+202 silly lockFile abbacc2d-gulp-concatg gulp-concatg@
+203 silly lockFile abbacc2d-gulp-concatg gulp-concatg@
+204 http 304 https://registry.npmjs.org/gulp-uglifyjs
+205 silly registry.get cb [ 304,
+205 silly registry.get   { date: 'Fri, 19 Dec 2014 10:48:50 GMT',
+205 silly registry.get     server: 'Apache',
+205 silly registry.get     via: '1.1 varnish',
+205 silly registry.get     'last-modified': 'Fri, 19 Dec 2014 10:48:50 GMT',
+205 silly registry.get     'cache-control': 'max-age=60',
+205 silly registry.get     etag: '"6CSQXF5WKSWS405RRFHL0NB11"',
+205 silly registry.get     age: '12',
+205 silly registry.get     'x-served-by': 'cache-ams4139-AMS',
+205 silly registry.get     'x-cache': 'HIT',
+205 silly registry.get     'x-cache-hits': '1',
+205 silly registry.get     'x-timer': 'S1418986130.213994,VS0,VE0',
+205 silly registry.get     vary: 'Accept',
+205 silly registry.get     'content-length': '0',
+205 silly registry.get     'keep-alive': 'timeout=10, max=49',
+205 silly registry.get     connection: 'Keep-Alive' } ]
+206 verbose etag https://registry.npmjs.org/gulp-uglifyjs from cache
+207 silly addNameRange number 2 { name: 'gulp-uglifyjs', range: '*', hasData: true }
+208 silly addNameRange versions [ 'gulp-uglifyjs',
+208 silly addNameRange   [ '0.1.0',
+208 silly addNameRange     '0.1.1',
+208 silly addNameRange     '0.2.0',
+208 silly addNameRange     '0.2.1',
+208 silly addNameRange     '0.3.0',
+208 silly addNameRange     '0.4.0',
+208 silly addNameRange     '0.4.1',
+208 silly addNameRange     '0.4.2',
+208 silly addNameRange     '0.4.3',
+208 silly addNameRange     '0.4.4',
+208 silly addNameRange     '0.5.0' ] ]
+209 verbose addNamed [ 'gulp-uglifyjs', '0.5.0' ]
+210 verbose addNamed [ '0.5.0', '0.5.0' ]
+211 silly lockFile a7a6cc3b-gulp-uglifyjs-0-5-0 gulp-uglifyjs@0.5.0
+212 verbose lock gulp-uglifyjs@0.5.0 /Users/joshua.soehn/.npm/a7a6cc3b-gulp-uglifyjs-0-5-0.lock
+213 silly lockFile a7a6cc3b-gulp-uglifyjs-0-5-0 gulp-uglifyjs@0.5.0
+214 silly lockFile a7a6cc3b-gulp-uglifyjs-0-5-0 gulp-uglifyjs@0.5.0
+215 silly lockFile 55dab76a-gulp-uglifyjs gulp-uglifyjs@
+216 silly lockFile 55dab76a-gulp-uglifyjs gulp-uglifyjs@
+217 http 304 https://registry.npmjs.org/gulp-ruby-sass
+218 silly registry.get cb [ 304,
+218 silly registry.get   { date: 'Fri, 19 Dec 2014 10:48:49 GMT',
+218 silly registry.get     server: 'Apache',
+218 silly registry.get     via: '1.1 varnish',
+218 silly registry.get     'last-modified': 'Fri, 19 Dec 2014 10:48:50 GMT',
+218 silly registry.get     'cache-control': 'max-age=60',
+218 silly registry.get     etag: '"BN3L9OZWH2E0NAW766F4LQJAH"',
+218 silly registry.get     age: '0',
+218 silly registry.get     'x-served-by': 'cache-ams4134-AMS',
+218 silly registry.get     'x-cache': 'HIT',
+218 silly registry.get     'x-cache-hits': '1',
+218 silly registry.get     'x-timer': 'S1418986129.998150,VS0,VE378',
+218 silly registry.get     vary: 'Accept',
+218 silly registry.get     'content-length': '0',
+218 silly registry.get     'keep-alive': 'timeout=10, max=50',
+218 silly registry.get     connection: 'Keep-Alive' } ]
+219 verbose etag https://registry.npmjs.org/gulp-ruby-sass from cache
+220 silly addNameRange number 2 { name: 'gulp-ruby-sass', range: '*', hasData: true }
+221 silly addNameRange versions [ 'gulp-ruby-sass',
+221 silly addNameRange   [ '0.1.0',
+221 silly addNameRange     '0.1.1',
+221 silly addNameRange     '0.1.2',
+221 silly addNameRange     '0.2.0',
+221 silly addNameRange     '0.3.0',
+221 silly addNameRange     '0.3.1',
+221 silly addNameRange     '0.4.0',
+221 silly addNameRange     '0.4.1',
+221 silly addNameRange     '0.4.2',
+221 silly addNameRange     '0.4.3',
+221 silly addNameRange     '0.5.0',
+221 silly addNameRange     '0.6.0',
+221 silly addNameRange     '0.7.0',
+221 silly addNameRange     '0.7.1',
+221 silly addNameRange     '1.0.0-alpha' ] ]
+222 verbose addNamed [ 'gulp-ruby-sass', '0.7.1' ]
+223 verbose addNamed [ '0.7.1', '0.7.1' ]
+224 silly lockFile 6c8b8a58-gulp-ruby-sass-0-7-1 gulp-ruby-sass@0.7.1
+225 verbose lock gulp-ruby-sass@0.7.1 /Users/joshua.soehn/.npm/6c8b8a58-gulp-ruby-sass-0-7-1.lock
+226 silly lockFile 6c8b8a58-gulp-ruby-sass-0-7-1 gulp-ruby-sass@0.7.1
+227 silly lockFile 6c8b8a58-gulp-ruby-sass-0-7-1 gulp-ruby-sass@0.7.1
+228 silly lockFile c308c9d4-gulp-ruby-sass gulp-ruby-sass@
+229 silly lockFile c308c9d4-gulp-ruby-sass gulp-ruby-sass@
+230 http 304 https://registry.npmjs.org/gulp-autoprefixer
+231 silly registry.get cb [ 304,
+231 silly registry.get   { date: 'Fri, 19 Dec 2014 10:48:49 GMT',
+231 silly registry.get     server: 'Apache',
+231 silly registry.get     via: '1.1 varnish',
+231 silly registry.get     'last-modified': 'Fri, 19 Dec 2014 10:48:50 GMT',
+231 silly registry.get     'cache-control': 'max-age=60',
+231 silly registry.get     etag: '"F1SPQIPHSJYNUV7FK1DAPFCVZ"',
+231 silly registry.get     age: '0',
+231 silly registry.get     'x-served-by': 'cache-ams4143-AMS',
+231 silly registry.get     'x-cache': 'HIT',
+231 silly registry.get     'x-cache-hits': '1',
+231 silly registry.get     'x-timer': 'S1418986129.997726,VS0,VE389',
+231 silly registry.get     vary: 'Accept',
+231 silly registry.get     'content-length': '0',
+231 silly registry.get     'keep-alive': 'timeout=10, max=50',
+231 silly registry.get     connection: 'Keep-Alive' } ]
+232 verbose etag https://registry.npmjs.org/gulp-autoprefixer from cache
+233 silly addNameRange number 2 { name: 'gulp-autoprefixer', range: '*', hasData: true }
+234 silly addNameRange versions [ 'gulp-autoprefixer',
+234 silly addNameRange   [ '0.0.1',
+234 silly addNameRange     '0.0.2',
+234 silly addNameRange     '0.0.3',
+234 silly addNameRange     '0.0.4',
+234 silly addNameRange     '0.0.5',
+234 silly addNameRange     '0.0.6',
+234 silly addNameRange     '0.0.7',
+234 silly addNameRange     '0.0.8',
+234 silly addNameRange     '0.0.9',
+234 silly addNameRange     '0.0.10',
+234 silly addNameRange     '1.0.0',
+234 silly addNameRange     '1.0.1',
+234 silly addNameRange     '2.0.0' ] ]
+235 verbose addNamed [ 'gulp-autoprefixer', '2.0.0' ]
+236 verbose addNamed [ '2.0.0', '2.0.0' ]
+237 silly lockFile f9a608cf-gulp-autoprefixer-2-0-0 gulp-autoprefixer@2.0.0
+238 verbose lock gulp-autoprefixer@2.0.0 /Users/joshua.soehn/.npm/f9a608cf-gulp-autoprefixer-2-0-0.lock
+239 silly lockFile f9a608cf-gulp-autoprefixer-2-0-0 gulp-autoprefixer@2.0.0
+240 silly lockFile f9a608cf-gulp-autoprefixer-2-0-0 gulp-autoprefixer@2.0.0
+241 silly lockFile e459a000-gulp-autoprefixer gulp-autoprefixer@
+242 silly lockFile e459a000-gulp-autoprefixer gulp-autoprefixer@
+243 http 304 https://registry.npmjs.org/gulp-watch
+244 silly registry.get cb [ 304,
+244 silly registry.get   { date: 'Fri, 19 Dec 2014 10:48:50 GMT',
+244 silly registry.get     server: 'Apache',
+244 silly registry.get     via: '1.1 varnish',
+244 silly registry.get     'last-modified': 'Fri, 19 Dec 2014 10:48:50 GMT',
+244 silly registry.get     'cache-control': 'max-age=60',
+244 silly registry.get     etag: '"2GW8JZYK3G4YRLWVXREAB5MS0"',
+244 silly registry.get     age: '0',
+244 silly registry.get     'x-served-by': 'cache-ams4129-AMS',
+244 silly registry.get     'x-cache': 'HIT',
+244 silly registry.get     'x-cache-hits': '1',
+244 silly registry.get     'x-timer': 'S1418986130.009108,VS0,VE751',
+244 silly registry.get     vary: 'Accept',
+244 silly registry.get     'content-length': '0',
+244 silly registry.get     'keep-alive': 'timeout=10, max=50',
+244 silly registry.get     connection: 'Keep-Alive' } ]
+245 verbose etag https://registry.npmjs.org/gulp-watch from cache
+246 silly addNameRange number 2 { name: 'gulp-watch', range: '*', hasData: true }
+247 silly addNameRange versions [ 'gulp-watch',
+247 silly addNameRange   [ '0.0.1',
+247 silly addNameRange     '0.0.2',
+247 silly addNameRange     '0.0.3',
+247 silly addNameRange     '0.0.4',
+247 silly addNameRange     '0.1.0',
+247 silly addNameRange     '0.1.1',
+247 silly addNameRange     '0.1.2',
+247 silly addNameRange     '0.1.3',
+247 silly addNameRange     '0.2.0',
+247 silly addNameRange     '0.2.1',
+247 silly addNameRange     '0.2.2',
+247 silly addNameRange     '0.2.3',
+247 silly addNameRange     '0.2.4',
+247 silly addNameRange     '0.2.5',
+247 silly addNameRange     '0.2.6',
+247 silly addNameRange     '0.2.7',
+247 silly addNameRange     '0.3.0',
+247 silly addNameRange     '0.3.1',
+247 silly addNameRange     '0.3.2',
+247 silly addNameRange     '0.3.3',
+247 silly addNameRange     '0.3.4',
+247 silly addNameRange     '0.4.0',
+247 silly addNameRange     '0.4.1',
+247 silly addNameRange     '0.4.2',
+247 silly addNameRange     '0.5.0',
+247 silly addNameRange     '0.5.2',
+247 silly addNameRange     '0.5.3',
+247 silly addNameRange     '0.5.4',
+247 silly addNameRange     '0.6.0',
+247 silly addNameRange     '0.6.1',
+247 silly addNameRange     '0.6.2',
+247 silly addNameRange     '0.6.3',
+247 silly addNameRange     '0.6.4',
+247 silly addNameRange     '0.6.5',
+247 silly addNameRange     '0.6.6',
+247 silly addNameRange     '0.7.0-alpha2',
+247 silly addNameRange     '0.6.6-1',
+247 silly addNameRange     '0.6.7',
+247 silly addNameRange     '0.6.8',
+247 silly addNameRange     '0.7.0-alpha3',
+247 silly addNameRange     '0.6.9',
+247 silly addNameRange     '0.6.10',
+247 silly addNameRange     '0.7.0',
+247 silly addNameRange     '0.7.1',
+247 silly addNameRange     '1.0.0',
+247 silly addNameRange     '1.0.2',
+247 silly addNameRange     '1.0.3',
+247 silly addNameRange     '1.0.4',
+247 silly addNameRange     '1.0.5',
+247 silly addNameRange     '1.0.6',
+247 silly addNameRange     '1.0.7',
+247 silly addNameRange     '1.1.0',
+247 silly addNameRange     '1.2.0',
+247 silly addNameRange     '1.0.8',
+247 silly addNameRange     '1.1.1',
+247 silly addNameRange     '1.2.1',
+247 silly addNameRange     '2.0.0',
+247 silly addNameRange     '3.0.0' ] ]
+248 verbose addNamed [ 'gulp-watch', '3.0.0' ]
+249 verbose addNamed [ '3.0.0', '3.0.0' ]
+250 silly lockFile 9a0a597a-gulp-watch-3-0-0 gulp-watch@3.0.0
+251 verbose lock gulp-watch@3.0.0 /Users/joshua.soehn/.npm/9a0a597a-gulp-watch-3-0-0.lock
+252 silly lockFile 9a0a597a-gulp-watch-3-0-0 gulp-watch@3.0.0
+253 silly lockFile 9a0a597a-gulp-watch-3-0-0 gulp-watch@3.0.0
+254 silly lockFile aa056385-gulp-watch gulp-watch@
+255 silly lockFile aa056385-gulp-watch gulp-watch@
+256 http 304 https://registry.npmjs.org/gulp-notify
+257 silly registry.get cb [ 304,
+257 silly registry.get   { date: 'Fri, 19 Dec 2014 10:48:50 GMT',
+257 silly registry.get     server: 'Apache',
+257 silly registry.get     via: '1.1 varnish',
+257 silly registry.get     'last-modified': 'Fri, 19 Dec 2014 10:48:50 GMT',
+257 silly registry.get     'cache-control': 'max-age=60',
+257 silly registry.get     etag: '"4ZDSX4VNSGMTGGG85DETX0I11"',
+257 silly registry.get     age: '0',
+257 silly registry.get     'x-served-by': 'cache-ams4122-AMS',
+257 silly registry.get     'x-cache': 'HIT',
+257 silly registry.get     'x-cache-hits': '1',
+257 silly registry.get     'x-timer': 'S1418986130.030261,VS0,VE799',
+257 silly registry.get     vary: 'Accept',
+257 silly registry.get     'content-length': '0',
+257 silly registry.get     'keep-alive': 'timeout=10, max=48',
+257 silly registry.get     connection: 'Keep-Alive' } ]
+258 verbose etag https://registry.npmjs.org/gulp-notify from cache
+259 silly addNameRange number 2 { name: 'gulp-notify', range: '*', hasData: true }
+260 silly addNameRange versions [ 'gulp-notify',
+260 silly addNameRange   [ '0.0.5',
+260 silly addNameRange     '0.0.6',
+260 silly addNameRange     '0.0.7',
+260 silly addNameRange     '0.0.8',
+260 silly addNameRange     '0.1.0',
+260 silly addNameRange     '0.2.0',
+260 silly addNameRange     '0.3.0',
+260 silly addNameRange     '0.3.2',
+260 silly addNameRange     '0.3.3',
+260 silly addNameRange     '0.3.4',
+260 silly addNameRange     '0.3.4-1',
+260 silly addNameRange     '0.3.4-2',
+260 silly addNameRange     '0.3.5-0',
+260 silly addNameRange     '0.4.0',
+260 silly addNameRange     '0.4.1',
+260 silly addNameRange     '0.4.2',
+260 silly addNameRange     '0.4.3',
+260 silly addNameRange     '0.4.5',
+260 silly addNameRange     '0.4.6',
+260 silly addNameRange     '0.5.0',
+260 silly addNameRange     '0.5.1',
+260 silly addNameRange     '0.6.0',
+260 silly addNameRange     '0.6.1',
+260 silly addNameRange     '0.6.2',
+260 silly addNameRange     '1.0.0-beta',
+260 silly addNameRange     '1.1.0',
+260 silly addNameRange     '1.1.1',
+260 silly addNameRange     '1.2.0',
+260 silly addNameRange     '1.2.1',
+260 silly addNameRange     '1.2.2',
+260 silly addNameRange     '1.2.4',
+260 silly addNameRange     '1.2.5',
+260 silly addNameRange     '1.2.6',
+260 silly addNameRange     '1.3.0',
+260 silly addNameRange     '1.3.1',
+260 silly addNameRange     '1.4.0',
+260 silly addNameRange     '1.4.1',
+260 silly addNameRange     '1.4.2',
+260 silly addNameRange     '1.5.0',
+260 silly addNameRange     '1.5.1',
+260 silly addNameRange     '1.6.0',
+260 silly addNameRange     '1.7.0',
+260 silly addNameRange     '1.7.1',
+260 silly addNameRange     '1.8.0',
+260 silly addNameRange     '2.0.0',
+260 silly addNameRange     '2.0.1',
+260 silly addNameRange     '2.1.0' ] ]
+261 verbose addNamed [ 'gulp-notify', '2.1.0' ]
+262 verbose addNamed [ '2.1.0', '2.1.0' ]
+263 silly lockFile 56ef9bf6-gulp-notify-2-1-0 gulp-notify@2.1.0
+264 verbose lock gulp-notify@2.1.0 /Users/joshua.soehn/.npm/56ef9bf6-gulp-notify-2-1-0.lock
+265 silly lockFile 56ef9bf6-gulp-notify-2-1-0 gulp-notify@2.1.0
+266 silly lockFile 56ef9bf6-gulp-notify-2-1-0 gulp-notify@2.1.0
+267 silly lockFile 6b689132-gulp-notify gulp-notify@
+268 silly lockFile 6b689132-gulp-notify gulp-notify@
+269 error 404 404 Not Found: gulp-concatg
+269 error 404
+269 error 404 'gulp-concatg' is not in the npm registry.
+269 error 404 You should bug the author to publish it
+269 error 404
+269 error 404 Note that you can also install from a
+269 error 404 tarball, folder, or http url, or git url.
+270 error System Darwin 13.4.0
+271 error command "node" "/usr/local/bin/npm" "install" "gulp-ruby-sass" "gulp-autoprefixer" "gulp-rename" "gulp-watch" "gulp-uglifyjs" "gulp-concatg" "browser-sync" "gulp-notify"
+272 error cwd /Users/joshua.soehn/Sites/personal-site
+273 error node -v v0.10.33
+274 error npm -v 1.4.28
+275 error code E404
+276 verbose exit [ 1, true ]
