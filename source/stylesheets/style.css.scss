@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('../fonts/Graphik-Regular-Web.eot');
+  src: url('../fonts/Graphik-Regular-Web.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Graphik-Regular-Web.woff') format('woff'),
+       url('../fonts/Graphik-Regular-Web.ttf') format('truetype'),
+       url('../fonts/Graphik-Regular-Web.svg#Graphik-Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('../fonts/Graphik-RegularItalic-Web.eot');
+  src: url('../fonts/Graphik-RegularItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Graphik-RegularItalic-Web.woff') format('woff'),
+       url('../fonts/Graphik-RegularItalic-Web.ttf') format('truetype'),
+       url('../fonts/Graphik-RegularItalic-Web.svg#Graphik-RegularItalic') format('svg');
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga", "kern";
+  background: #fff;
+}
+
+body {
+  font-family: 'Graphik Web', sans-serif;
+  font-size: 18px;
+  background: #fff;
+  position: relative;
+  @media (max-width: 800px) {
+    font-size: 16px;
+  }
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px dotted #000;
+  transition: all .2s ease;
+  &:hover {
+    color: #888;
+  }
+}
+
+p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #333;
+
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-weight: normal;
+}
+
+h3 {
+  display: inline-block;
+  font-size: 22px;
+  margin-bottom: 15px;
+  line-height: 1.4;
+  font-weight: normal;
+  border-bottom: 2px solid #000;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.wrap {
+  margin: 100px 0;
+  padding: 0 10%;
+}
+
+.flex--half {
+  width: 48%;
+}
+
+.site__profile__image {
+  width: 100%;
+}
+
+.flex--grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.content__section {
+  margin-bottom: 100px;
+}
+
+.site__work__text {
+  -webkit-column-count: 2;
+  -webkit-column-gap: 40px;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.services__wrap {
+  margin-top: 20px;
+  span {
+    display: block;
+    border-top: 1px solid #eee;
+    padding: 15px 0;
+    font-size: 20px;
+    color: #444;
+    &:last-child {
+      border-bottom: 1px solid #eee;
+    }
+  }
+}
+
+.site__footer {
+  font-size: 16px;
+  .copyright {
+    color: #666;
+  }
+  .social a {
+    margin-left: 20px;
+  }
+}
