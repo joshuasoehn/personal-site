@@ -55,7 +55,9 @@ a {
   border-bottom: 1px dotted #000;
   transition: all .2s ease;
   &:hover {
-    color: #888;
+    color: #2c4fff;
+    background-color: rgba(239, 84, 13, .2);
+    border-bottom: 1px dotted rgba(239, 84, 13, .5);
   }
 }
 
@@ -148,7 +150,7 @@ img {
     display: block;
     border-top: 1px solid #eee;
     padding: 15px 0;
-    font-size: 20px;
+    font-size: 22px;
     color: #444;
     line-height: 1.5;
     &:last-child {
