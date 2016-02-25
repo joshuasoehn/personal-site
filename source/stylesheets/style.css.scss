@@ -94,6 +94,9 @@ h2 {
   margin-bottom: 20px;
   line-height: 1.4;
   font-weight: normal;
+  @media (max-width: 600px) {
+    font-size: 26px;
+  }
 }
 
 h3 {
@@ -166,6 +169,9 @@ header a {
 
 .site__work__text {
   width: 48%;
+  @media (max-width: 800px) {
+    width: 100%;
+  }
   p {
     margin-bottom: 0;
   }
