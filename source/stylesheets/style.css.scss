@@ -22,6 +22,26 @@
   font-stretch: normal;
 }
 
+@font-face {
+  font-family: 'Tiempos Text';
+  src: url('../fonts/TiemposTextWeb-Regular.eot');
+  src: url('../fonts/TiemposTextWeb-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/TiemposTextWeb-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Tiempos Text';
+  src: url('../fonts/TiemposTextWeb-RegularItalic.eot');
+  src: url('../fonts/TiemposTextWeb-RegularItalic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/TiemposTextWeb-RegularItalic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +53,6 @@ html {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-feature-settings: "liga", "kern";
-  background: #fff;
 }
 
 body {
@@ -52,16 +71,17 @@ body {
 a {
   color: #000;
   text-decoration: none;
-  border-bottom: 1px dotted #000;
+  border-bottom: 2px solid #ccc;
   transition: all .2s ease;
+  padding-bottom: 2px;
   &:hover {
-    color: #2c4fff;
-    background-color: rgba(239, 84, 13, .2);
-    border-bottom: 1px dotted rgba(239, 84, 13, .5);
+    color: #111;
+    border-bottom: 2px solid #000;
   }
 }
 
 p {
+  font-family: 'Tiempos Text', Calluna, 'Times New Roman', Georgia, serif;
   line-height: 1.7;
   margin-bottom: 20px;
   color: #333;
@@ -70,7 +90,7 @@ p {
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 30px;
   margin-bottom: 20px;
   line-height: 1.4;
   font-weight: normal;
@@ -88,6 +108,16 @@ h3 {
 img {
   width: 100%;
   display: block;
+}
+
+.border {
+  width: 100%;
+  height: 10px;
+  background: #f8f7f3;
+}
+
+header a {
+  border: 2px solid #fff;
 }
 
 .wrap {
@@ -130,15 +160,12 @@ img {
   margin-bottom: 100px;
 }
 
+.site__work {
+  display: flex;
+}
+
 .site__work__text {
-  column-count: 2;
-  -webkit-column-count: 2;
-  column-gap: 40px;
-  -webkit-column-gap: 40px;
-  @media (max-width: 900px) {
-    column-count: 1;
-    -webkit-column-count: 1;
-  }
+  width: 48%;
   p {
     margin-bottom: 0;
   }

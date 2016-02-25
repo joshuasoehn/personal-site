@@ -5,18 +5,36 @@
 
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Joshua Söhn is a freelance Designer working in Berlin.">
+    <meta name="keywords" content="Joshua Söhn, Design, Development, Webdesign, Minimal, Berlin, Designer, UX">
+    <meta name="robots" content="index, follow">
 
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Joshua Söhn</title>
 
     <%= stylesheet_link_tag "style" %>
     <%= javascript_include_tag  "all" %>
-    <script src="https://use.typekit.net/ffn6pco.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
+
+  <header>
+    <div class="wrap">
+      <a href="/" class="logo">Joshua Söhn</a>
+    </div>
+  </header>
 
   <body class="<%= page_classes %>">
     <%= yield %>
   </body>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-38222283-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </html>
