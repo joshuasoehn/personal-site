@@ -79,7 +79,7 @@ a {
   }
 }
 
-p {
+p, ul  {
   font-family: 'Tiempos Text', Calluna, 'Times New Roman', Georgia, serif;
   line-height: 1.8rem;
   color: #333;
@@ -87,7 +87,8 @@ p {
   hyphens: auto;
 }
 
-p a {
+p a,
+li a {
   color: #000;
   text-decoration: none;
   border-bottom: 2px solid #ccc;
@@ -122,9 +123,42 @@ h3 {
   border-bottom: 2px solid #000;
 }
 
+h5 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
 img {
   width: 100%;
   display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+input {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  appearance: none;
+  font-family: "Graphik Web", sans-serif;
+  font-size: 18px;
+  padding: 20px;
+  outline: none;
+  border-radius: 0;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transtion: all .4s ease;
 }
 
 .center--text {
@@ -143,7 +177,7 @@ header a {
 }
 
 nav a {
-  margin-left: 1.5rem;
+  margin-right: 1.5rem;
   color: #444;
 }
 
@@ -155,6 +189,12 @@ nav a {
   }
 }
 
+.flex--grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .flex--half {
   width: 48%;
   @media (max-width: 900px) {
@@ -163,9 +203,33 @@ nav a {
   }
 }
 
-.flex--end {
+.flex--third {
+  width: 30%;
+  @media (max-width: 900px) {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+.flex--sixtyfive {
+  width: 65%;
+  @media (max-width: 900px) {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+.flex__end {
   flex-direction: column;
   justify-content: space-between;
+}
+
+.flex__left {
+  justify-content: flex-start;
+}
+
+.flex__center {
+  align-items: center;
 }
 
 .site__intro h2:first-child {
@@ -180,12 +244,6 @@ nav a {
 
 .site__profile__image {
   width: 100%;
-}
-
-.flex--grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .content__section {
@@ -227,10 +285,13 @@ nav a {
 .page--articles {}
 
 .article-link {
-  display: block;
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
   border-bottom: 1px solid #f8f8f8;
+}
+
+.article--img {
+  height: 100px;
+  width: auto;
 }
 
 .article-date {
@@ -240,18 +301,14 @@ nav a {
   letter-spacing: .1rem;
 }
 
-.library--intro {
-  margin: 6rem 0;
-}
-
 .library--item {
-  align-items: center;
   margin-bottom: 6rem;
 }
 
 .site__footer {
   font-size: 14px;
   .copyright {
-    color: #666;
+    text-align: left;
+    color: #ccc;
   }
 }
