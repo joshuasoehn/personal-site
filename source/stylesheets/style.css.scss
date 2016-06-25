@@ -57,7 +57,7 @@ html {
   -webkit-font-feature-settings: "liga", "dlig";
   -o-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig";
-  font-size: 18px;
+  font-size: 20px;
   @media (max-width: 600px) {
     font-size: 16px;
   }
@@ -80,7 +80,6 @@ a {
 }
 
 p, ul  {
-  font-family: 'Tiempos Text', Calluna, 'Times New Roman', Georgia, serif;
   line-height: 1.8rem;
   color: #333;
   -webkit-hyphens: auto;
@@ -90,14 +89,13 @@ p, ul  {
 p a,
 li a {
   color: #000;
-  text-decoration: none;
-  border-bottom: 2px solid #ccc;
-  transition: all .2s ease;
-  padding-bottom: 2px;
+  text-decoration: underline;
   &:hover {
-    color: #111;
-    border-bottom: 2px solid #000;
   }
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Tiempos Text', Calluna, 'Times New Roman', Georgia, serif;
 }
 
 h1 {
@@ -138,7 +136,7 @@ ul {
 }
 
 li {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 input {
@@ -169,11 +167,6 @@ input[type="submit"] {
   width: 100%;
   height: .5rem;
   background: #f8f7f3;
-}
-
-header a {
-  border: 0;
-  font-size: 18px;
 }
 
 nav a {
@@ -248,6 +241,9 @@ nav a {
 
 .content__section {
   margin-bottom: 8rem;
+  @media (max-width: 800px) {
+    margin-bottom: 4rem;
+  }
 }
 
 .site__work {
