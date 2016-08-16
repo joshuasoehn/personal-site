@@ -88,12 +88,9 @@ p, ul  {
 
 p a,
 li a {
-  color: #000;
-  border-bottom: 1px solid rgba(26, 26, 26, .3);
-  background-color: #FFFFEC;
+  color: blue;
   &:hover {
     color: #000;
-    background-color: #FFFFD9;
   }
 }
 
@@ -140,6 +137,9 @@ ul {
 
 li {
   margin-bottom: 5px;
+  @media (max-width: 600px) {
+    margin-bottom: 0;
+  }
 }
 
 input {
@@ -182,6 +182,7 @@ nav a {
   padding: 0 10%;
   @media (max-width: 800px) {
     padding: 0 6%;
+    margin: 2rem 0;
   }
 }
 
@@ -190,6 +191,10 @@ nav a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.flex--end {
+  justify-content: flex-end;
 }
 
 .flex--half {
@@ -204,7 +209,7 @@ nav a {
   width: 30%;
   @media (max-width: 900px) {
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -246,7 +251,7 @@ nav a {
 .content__section {
   margin-bottom: 8rem;
   @media (max-width: 800px) {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 }
 
