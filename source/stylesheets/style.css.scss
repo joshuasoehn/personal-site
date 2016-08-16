@@ -89,8 +89,11 @@ p, ul  {
 p a,
 li a {
   color: #000;
-  text-decoration: underline;
+  border-bottom: 1px solid rgba(26, 26, 26, .3);
+  background-color: #FFFFEC;
   &:hover {
+    color: #000;
+    background-color: #FFFFD9;
   }
 }
 
@@ -186,6 +189,7 @@ nav a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .flex--half {
