@@ -221,6 +221,12 @@ nav a {
   }
 }
 
+.flex--half--nm {
+  @media (max-width: 900px) {
+    margin-bottom: 0;
+  }
+}
+
 .flex--third {
   width: 30%;
   @media (max-width: 900px) {
@@ -262,6 +268,40 @@ nav a {
 
 .site__profile__image {
   width: 100%;
+}
+
+.p6 {
+  padding: 6%;
+}
+
+.bg--gray {
+  background: #f2f2f2;
+}
+
+.bg--black {
+  background: #111;
+}
+
+.white {
+  color: #fff;
+}
+
+.portrait {
+  position: relative;
+}
+
+.caption {
+  font-size: 14px;
+  position: absolute;
+  top: 4%;
+  right: 4%;
+  color: rgba(255, 255, 255, .5);
+  a {
+    color: rgba(255, 255, 255, .8);
+    &:hover {
+      color: rgba(255, 255, 255, 1);
+    }
+  }
 }
 
 .content__section {
