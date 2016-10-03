@@ -52,12 +52,10 @@
 html {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  -moz-font-feature-settings: "liga=1, dlig=1";
-  -ms-font-feature-settings: "liga", "dlig";
   -webkit-font-feature-settings: "liga", "dlig";
-  -o-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig";
-  font-size: 19px;
+  font-size: 21px;
+  background: #fff3eb;
   @media (max-width: 1200px) {
     font-size: 17px;
   }
@@ -67,11 +65,12 @@ html {
 }
 
 body {
-  font-family: 'Graphik Web', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #191171;
 }
 
 a {
-  color: #000;
+  color: #191171;
   text-decoration: none;
   transition: all .2s ease;
   &:hover {
@@ -81,12 +80,10 @@ a {
 
 p {
   font-family: Tiempos Text;
-  color: #3d464d;
 }
 
 p, ul  {
   line-height: 1.8rem;
-  color: #333;
   -webkit-hyphens: auto;
   hyphens: auto;
 }
@@ -97,21 +94,20 @@ li a {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Tiempos Text', Calluna, 'Times New Roman', Georgia, serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
 }
 
 h1 {
   font-size: 2rem;
   line-height: 1.4;
   margin-bottom: 2%;
-  font-weight: normal;
 }
 
 h2 {
   font-size: 1.6rem;
   margin-bottom: 2%;
   line-height: 1.4;
-  font-weight: normal;
 }
 
 h3 {
@@ -119,13 +115,16 @@ h3 {
   font-size: 22px;
   margin-bottom: 15px;
   line-height: 1.4;
-  font-weight: normal;
   border-bottom: 2px solid #000;
 }
 
 h5 {
   font-size: 18px;
-  font-weight: normal;
+}
+
+.hero-headline {
+  z-index: 999;
+  margin-top: -25px;
 }
 
 img {
@@ -194,8 +193,9 @@ nav a {
 }
 
 .wrap {
-  margin: 6rem 0;
-  padding: 0 10%;
+  max-width: 850px;
+  margin: 6rem auto;
+  padding: 0 5%;
   @media (max-width: 800px) {
     padding: 0 6%;
     margin: 2rem 0;
@@ -210,7 +210,7 @@ nav a {
 }
 
 .flex--end {
-  justify-content: flex-end;
+  align-self: flex-end;
 }
 
 .flex--half {
@@ -274,6 +274,11 @@ nav a {
   padding: 6%;
 }
 
+.mb0 {
+  margin-bottom: 0;
+}
+
+
 .bg--gray {
   background: #f2f2f2;
 }
@@ -312,10 +317,6 @@ nav a {
   @media (max-width: 800px) {
     margin-bottom: 2rem;
   }
-}
-
-.site__work {
-  display: flex;
 }
 
 .site__work__text {
