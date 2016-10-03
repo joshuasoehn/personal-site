@@ -125,6 +125,9 @@ h5 {
 .hero-headline {
   z-index: 999;
   margin-top: -25px;
+  @media (max-width: 600px) {
+    margin-top: 0px;
+  }
 }
 
 img {
@@ -215,21 +218,21 @@ nav a {
 
 .flex--half {
   width: 48%;
-  @media (max-width: 900px) {
+  @media (max-width: 600px) {
     width: 100%;
     margin-bottom: 2rem;
   }
 }
 
 .flex--half--nm {
-  @media (max-width: 900px) {
+  @media (max-width: 600px) {
     margin-bottom: 0;
   }
 }
 
 .flex--third {
   width: 30%;
-  @media (max-width: 900px) {
+  @media (max-width: 600px) {
     width: 100%;
     margin-bottom: 0.5rem;
   }
@@ -237,7 +240,7 @@ nav a {
 
 .flex--sixtyfive {
   width: 65%;
-  @media (max-width: 900px) {
+  @media (max-width: 600px) {
     width: 100%;
     margin-bottom: 2rem;
   }
