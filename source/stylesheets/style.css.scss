@@ -54,28 +54,24 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig";
-  font-size: 21px;
-  background: #F3EAE4;
+  font-size: 20px;
   @media (max-width: 1200px) {
-    font-size: 17px;
+    font-size: 18px;
   }
   @media (max-width: 600px) {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #191171;
+  font-family: 'Graphik Web', sans-serif;
+  color: #3d464d;
 }
 
 a {
-  color: #191171;
+  color: #000;
   text-decoration: none;
   transition: all .2s ease;
-  &:hover {
-    color: lighten(#191171, 30%);
-  }
 }
 
 p {
@@ -90,12 +86,17 @@ p, ul  {
 
 p a,
 li a {
-  text-decoration: underline;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #FFF3D1 0);
+  background-position: 0 18px;
+  background-repeat: no-repeat;
+  &:hover {
+    background-position: 0;
+  }
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 600;
+  font-weight: normal;
+  color: #111;
 }
 
 h1 {
@@ -120,14 +121,6 @@ h3 {
 
 h5 {
   font-size: 18px;
-}
-
-.hero-headline {
-  z-index: 999;
-  margin-top: -25px;
-  @media (max-width: 600px) {
-    margin-top: 0px;
-  }
 }
 
 img {
@@ -196,7 +189,7 @@ nav a {
 }
 
 .wrap {
-  max-width: 850px;
+  max-width: 1250px;
   margin: 6rem auto;
   padding: 0 5%;
   @media (max-width: 800px) {
@@ -295,28 +288,31 @@ nav a {
 }
 
 .portrait {
+  max-width: 300px;
+  margin-right: 40px;
   position: relative;
+  @media (max-width: 600px) {
+    margin-right: 0;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .caption {
-  font-size: 12px;
-  position: absolute;
-  top: 4%;
-  right: 4%;
-  color: rgba(255, 255, 255, .5);
+  margin-top: 10px;
+  color: #9ea3a6;
+  font-size: 16px;
+  a {
+    color: #9ea3a6;
+    text-decoration: underline;
+  }
   @media (max-width: 600px) {
     font-size: 12px;
-  }
-  a {
-    color: rgba(255, 255, 255, .8);
-    &:hover {
-      color: rgba(255, 255, 255, 1);
-    }
   }
 }
 
 .content__section {
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
   @media (max-width: 800px) {
     margin-bottom: 2rem;
   }
