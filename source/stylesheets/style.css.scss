@@ -47,6 +47,7 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 html {
@@ -76,6 +77,7 @@ a {
 
 p {
   font-family: Tiempos Text;
+  margin-bottom: 20px;
 }
 
 p, ul  {
@@ -84,11 +86,16 @@ p, ul  {
   hyphens: auto;
 }
 
+.copyright {
+  color: #999;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
 p a,
 li a {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #FFF3D1 0);
-  background-position: 0 18px;
-  background-repeat: no-repeat;
+  padding-bottom: -4px;
+  border-bottom: 1px solid #999;
   &:hover {
     background-position: 0;
   }
@@ -112,11 +119,9 @@ h2 {
 }
 
 h3 {
-  display: inline-block;
   font-size: 22px;
   margin-bottom: 15px;
   line-height: 1.4;
-  border-bottom: 2px solid #000;
 }
 
 h5 {
@@ -133,9 +138,13 @@ ul {
 }
 
 li {
-  margin-bottom: 20px;
+  font-family: Tiempos Text;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  &:last-child {
+    border-bottom: 1px solid #eee;
+  }
   @media (max-width: 600px) {
-    margin-bottom: 10px;
   }
 }
 
@@ -165,6 +174,10 @@ input[type="submit"] {
 
 .m--b--40 {
   margin-bottom: 40px;
+}
+
+.m--b--80 {
+  margin-bottom: 80px;
 }
 
 .center--text {
