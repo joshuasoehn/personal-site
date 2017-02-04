@@ -1,5 +1,15 @@
 @font-face {
-  font-family: 'Graphik Web';
+  font-family: 'GT America';
+  src: url('../fonts/GT-America-Extended-Bold.eot');
+  src: url('../fonts/GT-America-Extended-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/GT-America-Extended-Bold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
   src: url('../fonts/Graphik-Regular-Web.eot');
   src: url('../fonts/Graphik-Regular-Web.eot?#iefix') format('embedded-opentype'),
        url('../fonts/Graphik-Regular-Web.woff') format('woff'),
@@ -11,7 +21,7 @@
 }
 
 @font-face {
-  font-family: 'Graphik Web';
+  font-family: 'Graphik';
   src: url('../fonts/Graphik-RegularItalic-Web.eot');
   src: url('../fonts/Graphik-RegularItalic-Web.eot?#iefix') format('embedded-opentype'),
        url('../fonts/Graphik-RegularItalic-Web.woff') format('woff'),
@@ -55,17 +65,14 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig";
-  font-size: 20px;
-  @media (max-width: 1200px) {
-    font-size: 18px;
-  }
+  font-size: 1.1rem;
   @media (max-width: 600px) {
     font-size: 16px;
   }
 }
 
 body {
-  font-family: 'Graphik Web', sans-serif;
+  font-family: Tiempos Text;
   color: #3d464d;
 }
 
@@ -76,7 +83,6 @@ a {
 }
 
 p {
-  font-family: Tiempos Text;
   margin-bottom: 20px;
 }
 
@@ -89,7 +95,7 @@ p, ul  {
 .copyright {
   color: #999;
   margin-top: 40px;
-  font-size: 14px;
+  font-size: .8rem;
 }
 
 p a,
@@ -102,18 +108,19 @@ li a {
 }
 
 h1, h2, h3, h4, h5 {
+  font-family: GT America;
   font-weight: normal;
   color: #111;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 1.4;
   margin-bottom: 2%;
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   margin-bottom: 2%;
   line-height: 1.4;
 }
@@ -138,7 +145,6 @@ ul {
 }
 
 li {
-  font-family: Tiempos Text;
   padding: 20px 0;
   border-top: 1px solid #eee;
   &:last-child {
@@ -152,7 +158,6 @@ input {
   box-sizing: border-box;
   -webkit-appearance: none;
   appearance: none;
-  font-family: "Graphik Web", sans-serif;
   font-size: 18px;
   padding: 20px;
   outline: none;
@@ -190,19 +195,13 @@ input[type="submit"] {
   background: #f8f7f3;
 }
 
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 5px;
-}
-
 nav a {
   margin-right: 4%;
   color: #444;
 }
 
 .wrap {
-  max-width: 1250px;
+  max-width: 1040px;
   margin: 6rem auto;
   padding: 0 5%;
   @media (max-width: 800px) {
@@ -301,7 +300,8 @@ nav a {
 }
 
 .portrait {
-  max-width: 300px;
+  margin-top: 10px;
+  max-width: 240px;
   margin-right: 40px;
   position: relative;
   @media (max-width: 600px) {
@@ -314,7 +314,7 @@ nav a {
 .caption {
   margin-top: 10px;
   color: #9ea3a6;
-  font-size: 16px;
+  font-size: .7rem;
   a {
     color: #9ea3a6;
     text-decoration: underline;
