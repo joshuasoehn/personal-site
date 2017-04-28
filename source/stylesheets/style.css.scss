@@ -73,7 +73,7 @@ html {
 
 body {
   font-family: Tiempos Text;
-  color: #3d464d;
+  color: rgba(0,0,0,.7);
   background: #f3f1ea;
 }
 
@@ -88,15 +88,19 @@ p {
 }
 
 p, ul  {
-  line-height: 1.8rem;
+  line-height: 1.7;
   -webkit-hyphens: auto;
   hyphens: auto;
 }
 
+.small {
+  font-size: .7rem;
+  line-height: 1.5;
+}
+
 .copyright {
-  color: #999;
+  color: rgba(0,0,0,.3);
   margin-top: 40px;
-  font-size: .8rem;
 }
 
 p a,
@@ -147,12 +151,7 @@ ul {
 
 li {
   padding: 20px 0;
-  border-top: 1px solid #eee;
-  &:last-child {
-    border-bottom: 1px solid #eee;
-  }
-  @media (max-width: 600px) {
-  }
+  border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
 input {
@@ -171,7 +170,7 @@ input[type="submit"] {
   background: #fff;
   border: 1px solid #ccc;
   cursor: pointer;
-  transtion: all .4s ease;
+  transition: all .4s ease;
 }
 
 .m--b--20 {
