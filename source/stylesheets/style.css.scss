@@ -9,30 +9,6 @@
 }
 
 @font-face {
-  font-family: 'Graphik';
-  src: url('../fonts/Graphik-Regular-Web.eot');
-  src: url('../fonts/Graphik-Regular-Web.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Graphik-Regular-Web.woff') format('woff'),
-       url('../fonts/Graphik-Regular-Web.ttf') format('truetype'),
-       url('../fonts/Graphik-Regular-Web.svg#Graphik-Regular') format('svg');
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: 'Graphik';
-  src: url('../fonts/Graphik-RegularItalic-Web.eot');
-  src: url('../fonts/Graphik-RegularItalic-Web.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Graphik-RegularItalic-Web.woff') format('woff'),
-       url('../fonts/Graphik-RegularItalic-Web.ttf') format('truetype'),
-       url('../fonts/Graphik-RegularItalic-Web.svg#Graphik-RegularItalic') format('svg');
-  font-weight: 400;
-  font-style: italic;
-  font-stretch: normal;
-}
-
-@font-face {
   font-family: 'Tiempos Text';
   src: url('../fonts/TiemposTextWeb-Regular.eot');
   src: url('../fonts/TiemposTextWeb-Regular.eot?#iefix') format('embedded-opentype'),
@@ -60,21 +36,18 @@
   outline: none;
 }
 
-html {
+body {
+  font-family: "Tiempos Text";
+  color: rgba(0,0,0,.8);
+  background: #f3f1ea;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -webkit-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig";
-  font-size: 1.1rem;
+  font-size: 18px;
   @media (max-width: 600px) {
     font-size: 16px;
   }
-}
-
-body {
-  font-family: Tiempos Text;
-  color: rgba(0,0,0,.7);
-  background: #f3f1ea;
 }
 
 a {
@@ -93,51 +66,33 @@ p, ul  {
   hyphens: auto;
 }
 
-.small {
-  font-size: .7rem;
-  line-height: 1.5;
-}
-
-.copyright {
-  color: rgba(0,0,0,.3);
-  margin-top: 40px;
-}
-
-p a,
-li a {
-  padding-bottom: -4px;
-  border-bottom: 1px solid #999;
-  &:hover {
-    background-position: 0;
-  }
-}
-
 h1, h2, h3, h4, h5 {
-  font-family: GT America;
+  font-family: "GT America";
   font-weight: normal;
   color: #111;
 }
 
 h1 {
-  font-size: 1.6rem;
-  line-height: 1.4;
-  margin-bottom: 2%;
+  font-size: 34px;
+  line-height: 1.2;
 }
 
 h2 {
-  font-size: 1.2rem;
   margin-bottom: 2%;
   line-height: 1.4;
 }
 
 h3 {
-  font-size: 22px;
   margin-bottom: 15px;
   line-height: 1.4;
 }
 
-h5 {
+h4 {
   font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, “Roboto”, “Droid Sans”, “Helvetica Neue”, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 5px;
 }
 
 img {
@@ -154,155 +109,29 @@ li {
   border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
-input {
-  box-sizing: border-box;
-  -webkit-appearance: none;
-  appearance: none;
-  font-size: 18px;
-  padding: 20px;
-  outline: none;
-  border-radius: 0;
-  border: 1px solid #ccc;
-  width: 100%;
-}
-
-input[type="submit"] {
-  background: #fff;
-  border: 1px solid #ccc;
-  cursor: pointer;
-  transition: all .4s ease;
-}
-
-.m--b--20 {
-  margin-bottom: 20px;
-}
-
-.m--b--40 {
-  margin-bottom: 40px;
-}
-
-.m--b--80 {
-  margin-bottom: 80px;
-}
-
-.center--text {
-  text-align: center;
-}
-
-.border {
-  width: 100%;
-  height: .5rem;
-  background: #f8f7f3;
-}
-
-nav a {
-  margin-right: 4%;
-  color: #444;
-}
-
 .wrap {
-  max-width: 1040px;
-  margin: 6rem auto;
-  padding: 0 5%;
-  @media (max-width: 800px) {
-    padding: 0 6%;
-    margin: 2rem 0;
-  }
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
-.flex--grid {
+.flex-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
 }
 
-.flex--end {
-  align-self: flex-end;
+.page-1 {
+  width: 40%;
+  padding: 40px;
+  border-right: 1px solid rgba(0,0,0,.1);
 }
 
-.flex--half {
-  width: 48%;
-  @media (max-width: 600px) {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-}
-
-.flex--half--nm {
-  @media (max-width: 600px) {
-    margin-bottom: 0;
-  }
-}
-
-.flex--third {
-  width: 30%;
-  @media (max-width: 600px) {
-    width: 100%;
-    margin-bottom: 0.5rem;
-  }
-}
-
-.flex--sixtyfive {
-  width: 65%;
-  @media (max-width: 600px) {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-}
-
-.flex__end {
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.flex__left {
-  justify-content: flex-start;
-}
-
-.flex__center {
-  align-items: center;
-}
-
-.site__intro h2:first-child {
-  margin-bottom: 2rem;
-}
-
-.site__intro {
-  @media (max-width: 800px) {
-    margin-bottom: 3rem;
-  }
-}
-
-.site__profile__image {
-  width: 100%;
-}
-
-.p6 {
-  padding: 6%;
-}
-
-.mb0 {
-  margin-bottom: 0;
-}
-
-
-.bg--gray {
-  background: #f2f2f2;
-}
-
-.bg--black {
-  background: #111;
-}
-
-.white {
-  color: #fff;
+.page-2 {
+  width: 60%;
+  padding: 40px;
 }
 
 .portrait {
-  margin-top: 10px;
-  max-width: 240px;
-  margin-right: 40px;
   position: relative;
   @media (max-width: 600px) {
     margin-right: 0;
@@ -324,62 +153,25 @@ nav a {
   }
 }
 
-.content__section {
-  margin-bottom: 2rem;
-  @media (max-width: 800px) {
-    margin-bottom: 2rem;
-  }
+.site-title {
+  font-size: 18px;
+  font-family: "GT America";
 }
 
-.site__work__text {
+.position-location {
+  color: rgba(0,0,0,.5);
+}
+
+.introduction {
+  margin-top: 60px;
+}
+
+.interview {
+  margin-top: 60px;
+}
+
+.col {
   width: 48%;
-  @media (max-width: 800px) {
-    width: 100%;
-  }
-  p {
-    margin-bottom: 0;
-  }
-}
-
-.services__wrap {
-  margin-top: 20px;
-  span {
-    display: block;
-    border-top: 1px solid #eee;
-    padding: 15px 0;
-    font-size: 22px;
-    color: #444;
-    line-height: 1.5;
-    &:last-child {
-      border-bottom: 1px solid #eee;
-    }
-    @media (max-width: 800px) {
-      font-size: 18px;
-    }
-  }
-}
-
-.page--articles {}
-
-.article-link {
-  padding: 2rem 0;
-  border-bottom: 1px solid #f8f8f8;
-}
-
-.article--img {
-  height: 100px;
-  width: auto;
-}
-
-.article-date {
-  font-size: 12px;
-  color: #999;
-  text-transform: uppercase;
-  letter-spacing: .1rem;
-}
-
-.library--item {
-  margin-bottom: 6rem;
 }
 
 .site__footer {
