@@ -37,14 +37,14 @@
 }
 
 body {
-  font-family: "Tiempos Text";
+  font-family: "Tiempos Text Test";
   color: rgba(0,0,0,.8);
   background: #f3f1ea;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -webkit-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig";
-  font-size: 18px;
+  font-size: 16px;
   @media (max-width: 600px) {
     font-size: 16px;
   }
@@ -57,11 +57,15 @@ a {
 }
 
 p {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+p a {
+  text-decoration: underline;
 }
 
 p, ul  {
-  line-height: 1.7;
+  line-height: 1.6;
   -webkit-hyphens: auto;
   hyphens: auto;
 }
@@ -88,9 +92,9 @@ h3 {
 }
 
 h4 {
-  font-size: 18px;
-  font-family: -apple-system, BlinkMacSystemFont, “Roboto”, “Droid Sans”, “Helvetica Neue”, Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-size: 16px;
+  font-family: "Tiempos Text Test";
+  font-weight: 500;
   color: #111;
   margin-bottom: 5px;
 }
@@ -153,9 +157,8 @@ li {
   }
 }
 
-.site-title {
-  font-size: 18px;
-  font-family: "GT America";
+.name {
+  font-weight: 500;
 }
 
 .position-location {
@@ -174,10 +177,11 @@ li {
   width: 48%;
 }
 
-.site__footer {
-  font-size: 14px;
+.site-footer {
+  margin-top: 60px;
   .copyright {
-    text-align: left;
-    color: #ccc;
+    font-size: 12px;
+    text-align: right;
+    color: rgba(0,0,0,.2);
   }
 }
