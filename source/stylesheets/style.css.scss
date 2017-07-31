@@ -9,6 +9,16 @@
 }
 
 @font-face {
+  font-family: 'Graphik';
+  src: url('../fonts/Graphik-Regular-Web.eot');
+  src: url('../fonts/Graphik-Regular-Web.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Graphik-Regular-Web.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
   font-family: 'Tiempos Text';
   src: url('../fonts/TiemposTextWeb-Regular.eot');
   src: url('../fonts/TiemposTextWeb-Regular.eot?#iefix') format('embedded-opentype'),
@@ -37,7 +47,7 @@
 }
 
 body {
-  font-family: "Tiempos Text Test";
+  font-family: "Graphik";
   color: rgba(0,0,0,.8);
   background: #f3f1ea;
   -webkit-font-smoothing: antialiased;
@@ -46,7 +56,7 @@ body {
   font-feature-settings: "liga", "dlig";
   font-size: 16px;
   @media (max-width: 600px) {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -92,11 +102,12 @@ h3 {
 }
 
 h4 {
-  font-size: 16px;
-  font-family: "Tiempos Text Test";
-  font-weight: 500;
+  font-size: 18px;
+  font-family: "Graphik";
+  font-weight: 600;
   color: #111;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  line-height: 1.2;
 }
 
 img {
@@ -145,11 +156,12 @@ li {
 }
 
 .caption {
+  filter: grayscale(100%);
   margin-top: 10px;
-  color: #9ea3a6;
+  color: #333;
   font-size: .7rem;
   a {
-    color: #9ea3a6;
+    color: #333;
     text-decoration: underline;
   }
   @media (max-width: 600px) {
@@ -159,6 +171,7 @@ li {
 
 .name {
   font-weight: 500;
+  margin-bottom: 5px;
 }
 
 .position-location {
@@ -179,9 +192,4 @@ li {
 
 .site-footer {
   margin-top: 60px;
-  .copyright {
-    font-size: 12px;
-    text-align: right;
-    color: rgba(0,0,0,.2);
-  }
 }
