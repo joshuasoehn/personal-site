@@ -47,7 +47,7 @@
 }
 
 body {
-  font-family: "Graphik";
+  font-family: -apple-system, BlinkMacSystemFont, “Roboto”, “Droid Sans”, “Helvetica Neue”, Helvetica, Arial, sans-serif;
   color: rgba(0,0,0,.8);
   background: #f3f1ea;
   -webkit-font-smoothing: antialiased;
@@ -81,13 +81,13 @@ p, ul  {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: "GT America";
   font-weight: normal;
   color: #111;
 }
 
 h1 {
-  font-size: 34px;
+  font-family: "GT America";
+  font-size: 44px;
   line-height: 1.2;
 }
 
@@ -102,8 +102,7 @@ h3 {
 }
 
 h4 {
-  font-size: 18px;
-  font-family: "Graphik";
+  font-size: 16px;
   font-weight: 600;
   color: #111;
   margin-bottom: 10px;
