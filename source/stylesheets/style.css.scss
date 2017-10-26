@@ -48,8 +48,8 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, “Roboto”, “Droid Sans”, “Helvetica Neue”, Helvetica, Arial, sans-serif;
-  color: rgba(0,0,0,.8);
-  background: #f3f1ea;
+  color: rgba(255,255,255,.8);
+  background: #000;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -webkit-font-feature-settings: "liga", "dlig";
@@ -62,7 +62,7 @@ body {
 
 a {
   font-family: -apple-system, BlinkMacSystemFont, “Roboto”, “Droid Sans”, “Helvetica Neue”, Helvetica, Arial, sans-serif;
-  color: #000;
+  color: #fff;
   text-decoration: none;
   transition: all .2s ease;
 }
@@ -84,13 +84,16 @@ p, ul  {
 
 h1, h2, h3, h4, h5 {
   font-weight: normal;
-  color: #111;
+  color: #fff;
 }
 
 h1 {
   font-family: "GT America";
   font-size: 44px;
   line-height: 1.2;
+  @media (max-width: 600px) {
+    font-size: 34px;
+  }
 }
 
 h2 {
@@ -106,7 +109,6 @@ h3 {
 h4 {
   font-size: 18px;
   font-weight: 600;
-  color: #111;
   margin-bottom: 10px;
   line-height: 1.2;
 }
@@ -128,6 +130,10 @@ li {
 .wrap {
   max-width: 960px;
   margin: 0 auto;
+  @media (max-width: 1000px) {
+    max-width: 100%;
+    padding: 0 4%;
+  }
 }
 
 .flex-grid {
@@ -144,6 +150,7 @@ li {
     margin-right: 0;
     max-width: 100%;
     width: 100%;
+    margin-bottom: 40px;
   }
 }
 
@@ -165,24 +172,37 @@ li {
 .site-title {
   font-size: 16px;
   margin-top: 60px;
+  @media (max-width: 600px) {
+    margin-top: 30px;
+  }
 }
 
 .name {
+  color: #fff;
   font-weight: 500;
   margin-bottom: 5px;
 }
 
 .hero {
   margin-top: 80px;
+  @media (max-width: 600px) {
+    margin-top: 40px;
+  }
 }
 
 .introduction {
   margin-top: -12px;
   width: 65%;
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 }
 
 .interview {
   margin-top: 100px;
+  @media (max-width: 600px) {
+    margin-top: 60px;
+  }
 }
 
 .interview p {
@@ -191,8 +211,14 @@ li {
 
 .col {
   width: 48%;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 }
 
 .site-footer {
   margin-top: 60px;
+  @media (max-width: 600px) {
+    margin-top: 10px;
+  }
 }
