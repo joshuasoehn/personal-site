@@ -48,32 +48,35 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, “Roboto”, “Droid Sans”, “Helvetica Neue”, Helvetica, Arial, sans-serif;
-  color: rgba(255,255,255,.8);
-  background: #000;
+  color: #000202;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -webkit-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig";
-  font-size: 16px;
+  font-size: 20px;
   @media (max-width: 600px) {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
 a {
   font-family: -apple-system, BlinkMacSystemFont, “Roboto”, “Droid Sans”, “Helvetica Neue”, Helvetica, Arial, sans-serif;
-  color: #fff;
+  letter-spacing: .4px;
+  color: inherit;
   text-decoration: none;
   transition: all .2s ease;
 }
 
 p {
   font-family: 'Tiempos Text';
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 p a {
+  display: inline-block;
   text-decoration: underline;
+  transform: rotate(-2deg);
+  font-style: italic;
 }
 
 p, ul  {
@@ -84,7 +87,6 @@ p, ul  {
 
 h1, h2, h3, h4, h5 {
   font-weight: normal;
-  color: #fff;
 }
 
 h1 {
@@ -107,8 +109,10 @@ h3 {
 }
 
 h4 {
-  font-size: 18px;
-  font-weight: 600;
+  font-family: 'Tiempos Text';
+  font-size: 20px;
+  font-weight: normal;
+  color: #999;
   margin-bottom: 10px;
   line-height: 1.2;
 }
@@ -203,10 +207,6 @@ li {
   @media (max-width: 600px) {
     margin-top: 60px;
   }
-}
-
-.interview p {
-
 }
 
 .col {
