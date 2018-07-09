@@ -1,7 +1,3 @@
-/source/fonts
-s3_website.yml
-/.bundle
-/build
 /.sass-cache
 /.cache
 .DS_Store
