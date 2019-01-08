@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bagnard" type="text/css"/>
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/libre-baskerville" type="text/css"/>
   <title>Joshua Söhn</title>
   <style>
 
@@ -15,12 +15,18 @@
     }
 
     body {
-      font-family: 'BagnardRegular';
+      font-family: 'LibreBaskervilleRegular', serif;
       font-weight: normal;
       font-style: normal;
       -webkit-font-smoothing: antialiased;
-      font-size: 3vh;
+      font-size: 44px;
       color: #000;
+    }
+
+    @media (max-width: 800px) {
+      body {
+        font-size: 22px;
+      }
     }
 
     ::selection {
@@ -29,9 +35,9 @@
     }
 
     a {
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       color: inherit;
       font-weight: 400;
+      color: blueviolet;
     }
 
     p {
@@ -43,6 +49,7 @@
       max-width: 1400px;
       margin: auto;
       margin-top: 10%;
+      margin-bottom: 10%;
       padding: 0 4%;
       overflow: hidden;
     }
