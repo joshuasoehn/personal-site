@@ -4,60 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/libre-baskerville" type="text/css"/>
+  <link rel="stylesheet" href="style.css">
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="http://benahm.github.io/jquery.throwable/javascripts/jquery.throwable.js" type="text/javascript"></script>
   <title>Joshua Söhn</title>
-  <style>
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'LibreBaskervilleRegular', serif;
-      font-weight: normal;
-      font-style: normal;
-      -webkit-font-smoothing: antialiased;
-      font-size: 44px;
-      color: #000;
-    }
-
-    @media (max-width: 800px) {
-      body {
-        font-size: 22px;
-      }
-    }
-
-    ::selection {
-      background: #3A3AE7;
-      color: white;
-    }
-
-    a {
-      color: inherit;
-      font-weight: 400;
-      color: blueviolet;
-    }
-
-    p {
-      line-height: 1.4;
-      margin-bottom: 2rem;
-    }
-
-    .wrap {
-      max-width: 1400px;
-      margin: auto;
-      margin-top: 10%;
-      margin-bottom: 10%;
-      padding: 0 4%;
-      overflow: hidden;
-    }
-
-    .content {
-    }
-
-  </style>
 </head>
 <body>
   <div class="wrap">
@@ -66,7 +19,38 @@
       <p>I'm currently working for <a href="https://kontist.com/en">Kontist</a> as their Head of Design, building a better banking experience for freelancers.</p>
       <p><a href="mailto:hello@joshuasoehn.de">hello@joshuasoehn.de</a></p>
       <p>(Or <a href="https://twitter.com/joshuasoehn">tweet me</a> if you want a faster response)</p>
+      <div class="buttons">
+        <div class="button button-twitter">
+          <a href="https://twitter.com/joshuasoehn">Twitter</a>
+        </div>
+        <div class="button button-email">
+          <a href="mailto:joshua.soehn@me.com">E-Mail</a>
+        </div>
+      </div>
     </div>
   </div>
+
 </body>
+<script>
+$(document).ready(function () {
+  $(".button-twitter").throwable({
+    gravity:{x:0,y:3},
+    containment: [0,0,$(document).width(),$(document).height()],
+    bounce: 4,
+    impulse:{
+       f:200,
+       p:{x:-2,y:0}
+   },
+  })
+  $(".button-email").throwable({
+    gravity:{x:0,y:1},
+    containment: [0,0,$(document).width(),$(document).height()],
+    bounce: 4,
+    impulse:{
+       f:200,
+       p:{x:1,y:0}
+   },
+  })
+})
+</script>
 </html>
