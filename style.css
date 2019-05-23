@@ -17,6 +17,7 @@ body {
   body {
     font-size: 22px;
     word-break: break-word;
+    -webkit-hyphens: auto;
     hyphens: auto;
   }
 }
