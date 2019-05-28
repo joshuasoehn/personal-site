@@ -4,69 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/libre-baskerville" type="text/css"/>
+  <link rel="stylesheet" href="style.css">
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/body-scroll-lock/lib/bodyScrollLock.min.js"></script>
+  <script src="scripts/jquery.throwable.js"></script>
   <title>Joshua Söhn</title>
-  <style>
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'LibreBaskervilleRegular', serif;
-      font-weight: normal;
-      font-style: normal;
-      -webkit-font-smoothing: antialiased;
-      font-size: 44px;
-      color: #000;
-    }
-
-    @media (max-width: 800px) {
-      body {
-        font-size: 22px;
-      }
-    }
-
-    ::selection {
-      background: #3A3AE7;
-      color: white;
-    }
-
-    a {
-      color: inherit;
-      font-weight: 400;
-      color: blueviolet;
-    }
-
-    p {
-      line-height: 1.4;
-      margin-bottom: 2rem;
-    }
-
-    .wrap {
-      max-width: 1400px;
-      margin: auto;
-      margin-top: 10%;
-      margin-bottom: 10%;
-      padding: 0 4%;
-      overflow: hidden;
-    }
-
-    .content {
-    }
-
-  </style>
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Joshua Söhn" />
+  <meta property="og:description" content="Product/digital/whatever designer based in Berlin." />
+  <meta property="og:image" content="images/facebook-og.png" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Joshua Söhn" />
+  <meta name="twitter:description" content="Product/digital/whatever designer based in Berlin." />
+  <meta name="twitter:image" content="images/facebook-og.png" />
 </head>
 <body>
   <div class="wrap">
     <div class="content">
-      <p>Hi, nice to meet you! Interested in all displinces of design, I divide my days between working with code, design systems, branding and marketing.</p>
-      <p>I'm currently working for <a href="https://kontist.com/en">Kontist</a> as their Head of Design, building a better banking experience for freelancers.</p>
-      <p><a href="mailto:hello@joshuasoehn.de">hello@joshuasoehn.de</a></p>
-      <p>(Or <a href="https://twitter.com/joshuasoehn">tweet me</a> if you want a faster response)</p>
+      <p>Hey, I’m Joshua, a product/digital/whatever designer based in Berlin.<br> I divide my days between wrangling design systems, tinkering with code, and designing brands.</p>
+      <p>I’m currently the head of design at Kontist where we’re building a better banking experience for freelancers.</p>
+      <div class="buttons">
+        <div class="button button-twitter">
+          <a href="https://twitter.com/joshuasoehn">Twitter</a>
+        </div>
+        <div class="button button-email">
+          <a href="mailto:joshua.soehn@me.com">E-Mail</a>
+        </div>
+      </div>
     </div>
   </div>
+
 </body>
+<script>
+
+  bodyScrollLock.disableBodyScroll(document.querySelector("html"))
+
+  $(".button-twitter").throwable({
+    gravity:{x:0,y:3},
+    containment: [0,0,$(document).width(),$(document).height()],
+    bounce: 4,
+    autostart:true,
+    impulse: {
+       f:200,
+       p:{x:-2,y:0}
+    },
+  })
+  $(".button-email").throwable({
+    gravity:{x:0,y:1},
+    containment: [0,0,$(document).width(),$(document).height()],
+    bounce: 4,
+    autostart:true,
+    impulse: {
+       f:200,
+       p:{x:1,y:0}
+    },
+  })
+
+</script>
 </html>
