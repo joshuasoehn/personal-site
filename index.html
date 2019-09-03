@@ -28,8 +28,11 @@
         <div class="button button-twitter">
           <a href="https://twitter.com/joshuasoehn">Twitter</a>
         </div>
+        <div class="button button-arena">
+          <a href="https://www.are.na/joshua-sohn">Are.na</a>
+        </div>
         <div class="button button-email">
-          <a href="mailto:joshua.soehn@me.com">E-Mail</a>
+          <a href="mailto:joshua.soehn@me.com">Email</a>
         </div>
       </div>
     </div>
@@ -41,13 +44,23 @@
   bodyScrollLock.disableBodyScroll(document.querySelector("html"))
 
   $(".button-twitter").throwable({
-    gravity:{x:0,y:3},
+    gravity:{x:0,y:2},
     containment: [0,0,$(document).width(),$(document).height()],
     bounce: 4,
     autostart:true,
     impulse: {
        f:200,
        p:{x:-2,y:0}
+    },
+  })
+  $(".button-arena").throwable({
+    gravity:{x:0,y:2},
+    containment: [0,0,$(document).width(),$(document).height()],
+    bounce: 4,
+    autostart:true,
+    impulse: {
+       f:200,
+       p:{x:-1,y:0}
     },
   })
   $(".button-email").throwable({
