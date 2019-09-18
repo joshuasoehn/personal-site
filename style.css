@@ -1,3 +1,15 @@
+:root {
+  --background: #fff;
+  --text: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000;
+    --text: #fff;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +22,10 @@ body {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   font-size: 2.6vw;
-  color: #000;
+  color: var(--text);
+  background: var(--background);
 }
+
 
 @media (max-width: 800px) {
   body {
@@ -26,8 +40,8 @@ body {
 }
 
 ::selection {
-  background: black;
-  color: white;
+  background: var(--text);
+  color: var(--background);
 }
 
 a {
@@ -64,16 +78,16 @@ a {
 .button a {
   display: inline-block;
   padding: 20px 30px;
-  border: 3px solid #000;
+  border: 3px solid var(--text);
   text-decoration: none;
   border-radius: 30px;
   line-height: 1;
 }
 
 .button:hover a {
-  background: #000;
-  color: #fff;
-  box-shadow: 0 0 20px #000;
+  background: var(--text);
+  color: var(--background);
+  box-shadow: 0 0 20px var(--text);
 }
 
 @media (max-width: 800px) {
