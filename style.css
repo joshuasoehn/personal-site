@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Monument Grotesk';
+  src: url('/fonts/MonumentGrotesk-Regular.woff') format('woff2'),
+       url('/fonts/MonumentGrotesk-Regular.woff') format('woff');
+}
+
 :root {
   --background: #fff;
   --text: #000;
@@ -17,7 +23,7 @@
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'Monument Grotesk', Helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
